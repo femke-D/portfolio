@@ -1,16 +1,40 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/header.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle="Home">
+	<Header />
+	<section>
+		<h2>About me</h2>
+		<p>hey</p>
+		<p>
+			Ik ben Femke Denoo, afgestudeerd in Digital Design & Development,
+			met een passie voor UX/UI en interactieve digitale ervaringen. Wat
+			mij drijft? Nieuwsgierigheid. Ik wil blijven leren, andere culturen
+			ontdekken en mezelf uitdagen om steeds beter te worden. Die goesting
+			om te groeien vormt de basis van mijn werk als designer.
+		</p>
+		<p>Get to know me</p>
+	</section>
+
+	<section>
+		<h2>My Work</h2>
+		<p>Every pixel tells a story</p>
+	</section>
+
+	<section>
+		<h2>Insights</h2>
+		<ul>
+			<p>Shine bright</p>
+			<p>Be fearless</p>
+			<p>Design life</p>
+			<p>Be unstoppable</p>
+			<p>Code dreams</p>
+			<p>Push limits</p>
+			<p>Dream big</p>
+			<p>Spark joy</p>
+		</ul>
+		<p>Discover my insights</p>
+	</section>
+</BaseLayout>
