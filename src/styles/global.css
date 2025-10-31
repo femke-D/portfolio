@@ -33,7 +33,8 @@
     --font-detail: 'CoralBlushScript', cursive;
     --font-body: "Poppins", sans-serif;
 
-    --size-s: 30px;
+    --size-s: 12px;
+    --size-m: 50px;
 }
 
 body {
