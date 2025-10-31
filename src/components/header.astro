@@ -1,22 +1,83 @@
 <style>
+    .header-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto 6rem 6rem 12rem 6rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .header-start {
+        grid-column: 5 / 7;
+        grid-row: 1;
+        color: var(--color-mblauw);
+        font-size: var(--size-s);
+    }
+
     .header-sub {
         font-family: var(--font-detail);
-        font-size: var(--size-s);
+        font-size: var(--size-m);
         color: var(--color-red);
+        margin: 0;
     }
 
     .header-img {
-        width: 200px;
+        grid-column: 2 / span 4;
+        grid-row: 2 / 5;
+        justify-self: center;
+        align-self: center;
+        width: 267px;
+        z-index: -1;
+    }
+
+    .block-ux {
+        grid-column: 1 / 5;
+        grid-row: 2;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .block-design {
+        grid-column: 4 / 6;
+        grid-row: 3;
+        justify-self: start;
+        align-self: center;
+        text-align: left;
+        margin-left: -1rem;
+    }
+
+    .block-dev {
+        grid-column: 2 / 5;
+        grid-row: 5;
+        justify-self: start;
+        align-self: end;
+        margin-left: -1.5rem;
+    }
+
+    .ux,
+    .design,
+    .development {
+        font-size: var(--size-m);
+        margin-top: -2.8rem;
     }
     
     .header-title {
         font-family: var(--font-header);
         color: var(--color-dblauw);
     }
+
+    .header-cta {
+        grid-column: 4 / 7;
+        grid-row: 6;
+        align-self: end;
+        justify-self: end;
+        color: var(--color-dblauw);
+        text-decoration: none;
+        font-size: 14px;
+    }
 </style>
 
 <header>
-    <div class="header-begin">
+    <div class="header-grid">
         <p class="header-start">I am Femke Denoo</p>
 
         <img class="header-img" src="../public/assets/header.svg" alt="" />
