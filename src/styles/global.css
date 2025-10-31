@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'CoralBlushScript';
+    src: url('/fonts/coral-blush-script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+:root {
+    --s_2: .2rem;
+    --s_1: .5rem;
+    --s1: 1rem;
+    --s2: 1.2rem;
+    --s3: 1.5rem;
+    --s4: 2rem;
+
+    --fs-s: .8rem;
+    --fs-m: 1rem;
+    --fs-l: 1.5rem;
+    --fs-xl: 2rem;
+
+    --color-lbeige: #F7F2EC;
+    --color-dbeige: #DFC9B2;
+    --color-lblauw: #D0E4FF;
+    --color-mblauw: #6F96D1;
+    --color-dblauw: #0A205A;
+    --color-red: #7C170D;
+
+    --font-header: "impact", sans-serif;
+    --font-detail: 'CoralBlushScript', cursive;
+    --font-body: "Poppins", sans-serif;
+
+    --size-s: 30px;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 400;
+}
