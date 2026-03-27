@@ -1,0 +1,172 @@
+---
+import me from "../assets/me.png";
+---
+
+<section class="about">
+    <h2 class="about-titel">About me</h2>
+    <p class="about-intro">Hey</p>
+    <div class="about-img-wrapper">
+        <img
+            class="about-img"
+            src={me.src}
+            loading="lazy"
+            alt="Foto van mezelf"
+        />
+    </div>
+
+    <p class="about-tekst">
+        Ik ben Femke Denoo,
+        <br />
+        afgestudeerd in Digital Design & Development, met een passie voor UX/UI en
+        interactieve digitale ervaringen.
+        <br />
+        <br />
+        Wat mij drijft? Nieuwsgierigheid. Ik wil blijven leren, andere culturen ontdekken
+        en mezelf uitdagen om steeds beter te worden. Die goesting om te groeien
+        vormt de basis van mijn werk als designer.
+    </p>
+    <a href="/portfolio/about" class="about__button">Get to know me</a>
+</section>
+
+<style>
+    .about {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        grid-template-rows: auto auto auto;
+        align-items: start;
+    }
+
+    .about-titel {
+        grid-column: 1 / -1;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-intro {
+        grid-column: 1;
+        margin: 0 0 10px 120px;
+        margin-bottom: -20px;
+        z-index: 1;
+    }
+    .about-img-wrapper {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%;
+        justify-self: start;
+    }
+
+    .about-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about-tekst {
+        grid-column: 2;
+        grid-row: 3;
+        line-height: 1.7;
+        margin-top: 20px;
+        margin-left: 1rem;
+    }
+
+    .about__button {
+        grid-column: 2;
+        grid-row: 4;
+        justify-self: end;
+        margin-top: 2rem;
+    }
+
+    @media screen and (min-width: 48em) {
+        .about {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .about-titel {
+            grid-column: 1 / -1;
+            margin-left: 2rem;
+            margin-right: -2rem;
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 1rem;
+        }
+
+        .about-intro {
+            grid-column: 2;
+            font-size: var(--size-xl);
+            margin-left: -5rem;
+            margin-top: 2rem;
+        }
+
+        .about-tekst,
+        .about__button {
+            margin-top: -1rem;
+            margin-right: 8rem;
+            margin-left: -2rem;
+        }
+
+        .about-img-wrapper {
+            margin-left: 10rem;
+            grid-row: 2 / 4;
+            max-width: 380px;
+        }
+    }
+
+    @media screen and (min-width: 80em) {
+        .about {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 8rem auto auto;
+            margin-left: 3rem;
+            padding-bottom: 5rem;
+        }
+
+        .about-titel {
+            grid-column: 1 / -1;
+            margin-left: 2rem;
+            margin-right: 0;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .about-intro {
+            grid-column: 2;
+            grid-row: 2;
+            font-size: var(--size-xxl);
+            margin-left: -10rem;
+        }
+
+        .about-tekst {
+            grid-row: 3;
+            grid-column: 2;
+            margin-top: 1rem;
+            margin-left: -6rem;
+            
+        }
+
+        .about__button {
+            margin-top: 2rem;
+            margin-right: 8rem;
+        }
+
+        .about-img-wrapper {
+            margin-left: 8rem;
+            grid-row: 2 / 5;
+            max-width: 450px;
+        }
+    }
+</style>
+
+<script>
+    const greetings = ["Hoi", "Hey", "Salut", "Hallo", "Hola", "Ciao", "Oi"];
+    const $aboutIntro = document.querySelector(".about-intro");
+
+    const getRandomGreeting = () => {
+        return greetings[Math.floor(Math.random() * greetings.length)];
+    };
+
+    const init = () => {
+        setInterval(() => {
+            $aboutIntro.textContent = getRandomGreeting();
+        }, 3000);
+    };
+
+    init();
+</script>

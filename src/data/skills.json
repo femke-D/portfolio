@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "skills": "html"
+    },
+    {
+        "id": 2,
+        "skills": "css"
+    },
+    {
+        "id": 3,
+        "skills": "after effects"
+    },
+    {
+        "id": 4,
+        "skills": "illustrator"
+    },
+    {
+        "id": 5,
+        "skills": "photoshop"
+    },
+    {
+        "id": 6,
+        "skills": "github"
+    },
+    {
+        "id": 7,
+        "skills": "javascript"
+    },
+    {
+        "id": 8,
+        "skills": "figma"
+    },
+    {
+        "id": 9,
+        "skills": "UX/UI"
+    }
+]

@@ -1,0 +1,186 @@
+---
+import footerLogo from "../assets/logo.svg";
+---
+
+<footer class="footer">
+    <h2 class="footer__title">
+        Let’s <span class="footer__highlight">Connect</span>
+    </h2>
+
+    <div class="footer__act">
+        <a href="mailto:femke.denoo@proximus.be" class="footer__cta">
+            femke.denoo@proximus.be
+        </a>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__socials">
+            <a
+                href="https://www.linkedin.com/in/femke-denoo-834665397/"
+                target="_blank"
+                class="footer__social-link footer__social-link--linkedin"
+                >LinkedIn</a
+            >
+            <a
+                href="https://www.instagram.com/femke_denoo"
+                target="_blank"
+                class="footer__social-link footer__social-link--instagram"
+                >Instagram</a
+            >
+            <a
+                href="https://www.behance.net/femkedenoo1"
+                target="_blank"
+                class="footer__social-link footer__social-link--behance"
+                >Behance</a
+            >
+        </p>
+        <a class="nav__logo-link" href="/portfolio/index.html">
+            <img class="footer__img" src={footerLogo.src} alt="Footer logo" />
+        </a>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        margin-top: 4rem;
+    }
+
+    .footer__title {
+        margin-left: 4rem;
+    }
+
+    .footer__highlight {
+        font-family: var(--font-detail);
+        font-size: var(--size-ml);
+        color: var(--color-lblauw);
+        margin-left: 1.5rem;
+        text-transform: none;
+    }
+
+    .footer__act {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer__cta {
+        padding: 5px 25px;
+        border: 1px solid var(--color-red);
+        border-radius: 4rem;
+    }
+
+    .footer__socials {
+        font-size: var(--size-sm);
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @media screen and (min-width: 48em) {
+        .footer__title {
+            display: flex;
+            justify-content: center;
+            margin-right: 20rem;
+        }
+        .footer__highlight {
+            font-size: var(--size-xxl);
+            margin-left: 3rem;
+            margin-top: -1rem;
+        }
+        .footer__bottom {
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            justify-content: space-between;
+        }
+        .footer__act {
+            font-size: var(--size-m);
+            padding: 4rem;
+            padding-bottom: 8rem;
+        }
+        .footer__socials {
+            font-size: 20px;
+            align-items: start;
+            gap: 3rem;
+        }
+    }
+
+    @media screen and (min-width: 80em) {
+        .footer {
+            margin-top: 10rem;
+        }
+
+        .footer__title {
+            display: flex;
+            justify-content: center;
+            margin-right: 20rem;
+        }
+
+        .footer__highlight {
+            margin-left: 4rem;
+        }
+
+        .footer__bottom {
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .footer__act {
+            font-size: var(--size-mml);
+            padding: 4rem;
+            padding-bottom: 8rem;
+        }
+        .footer__cta:hover {
+            font-size: var(--size-mmml);
+        }
+        .footer__socials {
+            font-size: 20px;
+            align-items: start;
+            gap: 5rem;
+        }
+
+        .footer__social-link:hover {
+            color: var(--color-red);
+        }
+    }
+</style>
+
+<script>
+    const contact = [
+        "say hi",
+        "chat",
+        "get in touch",
+        "reach out",
+        "stay in touch",
+        "meet",
+        "keep in touch",
+        "grab a coffee",
+    ];
+
+    const $changingConect = document.querySelector(".footer__highlight");
+
+    const getRandomGreeting = () => {
+        return contact[Math.floor(Math.random() * contact.length)];
+    };
+
+    const changing = () => {
+        $changingConect.textContent = getRandomGreeting();
+    };
+    
+    setInterval(() => {
+        changing();
+    }, 1500);
+</script>

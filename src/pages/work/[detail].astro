@@ -1,0 +1,24 @@
+---
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+import MarkdownLayout from "../../layouts/Markdown.astro";
+
+export async function getStaticPaths() {
+    const projecten = await getCollection("projecten");
+    return projecten.map((project) => ({
+        params: { detail: project.id },
+        props: { project },
+    }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<MarkdownLayout
+    title={project.data.title}
+    description={project.data.description}
+    image={project.data.image.src}
+>
+    <Content />
+</MarkdownLayout>

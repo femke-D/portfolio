@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import ProjectsCard from "./projectsCard.astro";
+
+const projecten = await getCollection("projecten");
+---
+
+<section>
+    <h2 class="projects__title">My work</h2>
+    <ul class="projects__list">
+        {
+            projecten.map((project) => (
+                <li class="projects__item">
+                    <ProjectsCard project={project} />
+                </li>
+            ))
+        }
+    </ul>
+</section>
+
+<style>
+    .projects__title {
+        margin-bottom: 2rem;
+    }
+
+    .projects__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    @media screen and (min-width: 48em) {
+        .projects__list {
+            display: grid;
+            grid-template-columns: repeat(2, 280px);
+            gap: 4rem ;
+        }
+    }
+
+    @media screen and (min-width: 80em) {
+        .projects__list {
+            grid-template-columns: repeat(2, 350px);
+            gap: 4rem ;
+        }
+    }
+</style>

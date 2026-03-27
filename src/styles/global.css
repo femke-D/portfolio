@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'CoralBlushScript';
+    src: url('../fonts/coral-blush-script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+:root {
+    --s_2: .2rem;
+    --s_1: .5rem;
+    --s1: 1rem;
+    --s2: 1.2rem;
+    --s3: 1.5rem;
+    --s4: 2rem;
+
+    --fs-s: .8rem;
+    --fs-m: 1rem;
+    --fs-l: 1.5rem;
+    --fs-xl: 2rem;
+
+    --color-lbeige: #F7F2EC;
+    --color-dbeige: #DFC9B2;
+    --color-lblauw: #D0E4FF;
+    --color-mblauw: #6F96D1;
+    --color-dblauw: #0A205A;
+    --color-red: #7C170D;
+
+    --font-header: "impact", sans-serif;
+    --font-detail: 'CoralBlushScript', cursive;
+    --font-body: "Poppins", sans-serif;
+
+    --size-xs: 10px;
+    --size-s: 12px;
+    --size-sm: 15px;
+    --size-ss: 25px;
+    --size-mml: 30px;
+    --size-mmml: 32px;
+    --size-ml: 50px;
+    --size-l: 70px;
+    --size-xl: 80px;
+    --size-xxl: 100px
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    margin: var(--s1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+h2,
+.project__title,
+.quote__title {
+    color: var(--color-dblauw);
+    text-transform: uppercase;
+    font-family: var(--font-header);
+    font-size: var(--size-mmml);
+    letter-spacing: .5px;
+}
+
+
+
+.about__button,
+.insight__button,
+.header-cta,
+.go-back-link,
+.quote-btn {
+    color: var(--color-dblauw);
+    font-size: 14px;
+}
+
+.about-intro,
+.about__greeting {
+    font-family: var(--font-detail);
+    font-size: var(--size-ml);
+    color: var(--color-red);
+}
+
+.footer__img,
+.nav__logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+p {
+    font-size: var(--size-s);
+}
+
+.work__list,
+.about__work-list,
+.projects__list,
+.skills__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.quote__content,
+.project__content,
+.project__content p,
+.quote__content p {
+    font-size: var(--size-ss);
+}
+
+@media screen and (min-width: 48em) {
+
+    h2,
+    .project__title,
+    .quote__title {
+        font-size: var(--size-mml);
+        margin-left: 4rem;
+    }
+
+    p {
+        font-size: var(--size-sm);
+    }
+
+    .about__button,
+    .insight__button,
+    .header-cta,
+    .go-back-link,
+    .quote-btn {
+        color: var(--color-dblauw);
+        font-size: 16px;
+    }
+
+    .footer__img,
+    .nav__logo {
+        margin-top: 1rem;
+        max-width: 120px;
+    }
+
+    .footer__img {
+        margin-right: 2rem;
+    }
+
+    .nav__logo {
+        margin-left: 2rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 80em) {
+
+    h2,
+    .project__title,
+    .quote__title {
+        font-size: var(--size-ml);
+        margin-left: 4rem;
+    }
+
+    p {
+        font-size: var(--size-sm);
+    }
+
+    .about__button,
+    .insight__button,
+    .header-cta,
+    .go-back-link,
+    .quote-btn {
+        color: var(--color-dblauw);
+        font-size: 16px;
+    }
+
+    .about__button::after,
+    .insight__button::after,
+    .header-cta::after,
+    .go-back-link::after,
+    .quote-btn::after {
+        content: '→';
+        display: inline-block;
+        opacity: 0;
+        margin-left: 0.3rem;
+        transform: translateX(-10px);
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+
+    .about__button:hover,
+    .insight__button:hover,
+    .header-cta:hover,
+    .go-back-link:hover,
+    .quote-btn:hover {
+        text-decoration: underline;
+    }
+
+    .about__button:hover::after,
+    .insight__button:hover::after,
+    .header-cta:hover::after,
+    .go-back-link:hover::after,
+    .quote-btn:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .footer__img,
+    .nav__logo {
+        margin-top: 1rem;
+        max-width: 150px;
+    }
+
+    .footer__img {
+        margin-right: 2rem;
+    }
+
+    .nav__logo {
+        margin-left: 2rem;
+    }
+
+
+}

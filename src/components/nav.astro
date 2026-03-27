@@ -1,0 +1,232 @@
+---
+import logo from "../assets/logo.svg";
+---
+
+<nav class="nav">
+    <a class="nav__logo-link" href="/portfolio/index.html">
+        <img
+            src={logo.src}
+            width="200"
+            height="200"
+            loading="lazy"
+            alt="Logo"
+            class="nav__logo"
+        />
+    </a>
+
+    <button
+        class="nav__button hidden"
+        aria-label="Navigation menu"
+        aria-expanded="false"
+        aria-controls="navi-rechts"
+    >
+        <span class="nav__icon">☰</span>
+    </button>
+
+    <div class="navi-rechts" id="navi-rechts">
+        <button class="nav__close hidden" aria-label="Close navigation"
+            >✕</button
+        >
+        <a href="/portfolio/about" class="nav__link nav__link--about">ABOUT</a>
+        <a href="/portfolio/project" class="nav__link nav__link--work"
+            >MY WORK</a
+        >
+        <a href="/portfolio/insights" class="nav__link nav__link--insights"
+            >INSIGHTS</a
+        >
+    </div>
+</nav>
+
+<style>
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+
+    .nav__button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 28px;
+        color: currentColor;
+    }
+
+    .nav__close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 28px;
+        color: currentColor;
+        align-self: flex-end;
+        margin-bottom: 2rem;
+        margin-top: 0.5rem;
+        margin-right: -1.2rem;
+    }
+
+    .navi-rechts {
+        gap: 3rem;
+        align-items: flex-end;
+        font-size: var(--size-ss);
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem 3rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+    }
+
+    .nav__link {
+        text-align: right;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+    .nav__icon {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 48em) {
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.5rem;
+        }
+
+        .navi-rechts {
+            flex-direction: row;
+            position: static;
+            padding: 0;
+            box-shadow: none;
+            background: transparent;
+            backdrop-filter: none;
+            font-size: 20px;
+            gap: 2rem;
+            align-items: center;
+            height: auto;
+        }
+
+        .nav__link {
+            width: auto;
+            padding: 0;
+        }
+        .nav__link--active {
+            color: var(--color-red);
+            font-weight: bold;
+        }
+    }
+
+    @media screen and (min-width: 80em) {
+        .navi-rechts {
+            font-size: 25px;
+            gap: 5rem;
+            margin-right: 4rem;
+        }
+        .nav__link:hover {
+            font-weight: bold;
+        }
+
+        .nav__link--active {
+            color: var(--color-red);
+            font-weight: bold;
+        }
+    }
+</style>
+
+<script>
+    const $links = document.querySelectorAll(".nav__link");
+    const $nav = document.querySelector(".nav");
+    const $navButton = document.querySelector(".nav__button");
+    const $navList = document.querySelector(".navi-rechts");
+    const $navIcon = document.querySelector(".nav__icon");
+    const $navClose = document.querySelector(".nav__close");
+
+    const isMobile = () => window.innerWidth < 640;
+
+    const setActiveNavLink = () => {
+        const currentPath = window.location.pathname;
+        $links.forEach((link) => {
+            link.classList.toggle(
+                "nav__link--active",
+                link.getAttribute("href") === currentPath,
+            );
+        });
+    };
+
+    const initMobile = () => {
+        if (!$navButton || !$navList || !$navClose) return;
+
+        if (isMobile()) {
+            $navButton.classList.remove("hidden");
+            $navList.classList.add("hidden");
+            $navClose.classList.add("hidden");
+        } else {
+            $navButton.classList.add("hidden");
+            $navList.classList.remove("hidden");
+            $navClose.classList.add("hidden");
+            $nav.classList.remove("nav--fixed");
+        }
+    };
+
+    const openNavigation = () => {
+        $navButton.setAttribute("aria-expanded", "true");
+        $navList.classList.remove("hidden");
+        $navClose.classList.remove("hidden");
+        $nav.classList.add("nav--fixed");
+        $navButton.classList.add("hidden");
+    };
+
+    // Sluit navigatie
+    const closeNavigation = () => {
+        $navButton.setAttribute("aria-expanded", "false");
+        $navList.classList.add("hidden");
+        $navClose.classList.add("hidden");
+        $nav.classList.remove("nav--fixed");
+        $navButton.classList.remove("hidden");
+    };
+
+    const toggleNavigation = () => {
+        if (!isMobile()) return;
+        const open = $navButton.getAttribute("aria-expanded") === "true";
+        open ? closeNavigation() : openNavigation();
+    };
+
+    const init = () => {
+        if (!$navButton || !$navList || !$navClose) return;
+
+        $navButton.addEventListener("click", toggleNavigation);
+        $navClose.addEventListener("click", closeNavigation);
+
+        $navList.querySelectorAll("a").forEach((item) => {
+            item.addEventListener("click", () => {
+                if (isMobile()) closeNavigation();
+            });
+        });
+
+        window.addEventListener("keyup", (e) => {
+            if (e.key === "Escape" && isMobile()) {
+                $navButton.focus();
+                closeNavigation();
+            }
+        });
+
+        window.addEventListener("resize", initMobile);
+        initMobile();
+    };
+    setActiveNavLink();
+    init();
+</script>

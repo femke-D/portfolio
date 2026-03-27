@@ -1,0 +1,205 @@
+---
+const { project } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<section class="project">
+    <a href={`/portfolio/work/${project.id}/`} class="project__link">
+        <div class="project__wrapper">
+            <Image
+                class="project__image"
+                src={project.data.image}
+                alt={project.data.title}
+            />
+            <h3 class="project__subtitle">{project.data.title}</h3>
+            <p class="project__description">{project.data.description}</p>
+        </div>
+        <div class="project__arrow">
+            <svg viewBox="0 0 24 24" class="arrow-icon">
+                <path
+                    d="M9 6 L15 12 L9 18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </a>
+</section>
+
+<style>
+    .project {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project__link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .project__wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .project__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .project__subtitle,
+    .project__description {
+        position: absolute;
+        left: 2rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: var(--color-red);
+    }
+
+    .project__subtitle {
+        top: 2rem;
+        font-size: var(--size-ss);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .project__description {
+        top: 4.5rem;
+        font-size: 20px;
+        margin: 0;
+        max-width: 70%;
+    }
+
+    .project__arrow {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        color: var(--color-red);
+
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid var(--color-red);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .project__arrow .arrow-icon {
+        width: 30px;
+        height: 30px;
+        stroke: var(--color-red);
+    }
+
+    .project__wrapper::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transition: background 0.3s ease;
+        z-index: 1;
+    }
+
+    .project__subtitle,
+    .project__description,
+    .project__subtitle::after {
+        z-index: 2;
+    }
+
+    @media screen and (min-width: 48em) {
+        .project__arrow {
+            right: 1rem;
+            bottom: 1rem;
+            width: 50px;
+            height: 50px;
+        }
+
+        .project__wrapper {
+            max-width: 600px;
+        }
+
+        .project__subtitle {
+            font-size: var(--size-mmml);
+        }
+
+        .project__description {
+            font-size: var(--size-ss);
+            margin-top: 0.5rem;
+        }
+
+        .project__subtitle,
+        .project__description {
+            left: 0.5rem;
+        }
+
+        .project__arrow .arrow-icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media screen and (min-width: 80em) {
+        .project__wrapper {
+            max-width: 900px;
+            padding: 0;
+            margin: 0 auto 2rem auto;
+        }
+        .project__subtitle {
+            font-size: var(--size-mmml);
+            margin-left: 0;
+        }
+        .project__subtitle,
+        .project__description {
+            left: 2rem;
+        }
+        .project__description {
+            font-size: var(--size-ss);
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+
+        .project__arrow {
+            opacity: 0;
+            right: 1rem;
+            bottom: 3rem;
+            width: 70px;
+            height: 70px;
+        }
+
+        .project__arrow .arrow-icon {
+            width: 45px;
+            height: 45px;
+        }
+
+        .project:hover .project__arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .project:hover .project__image {
+            transform: scale(1.05);
+        }
+
+        .project:hover .project__subtitle,
+        .project:hover .project__description,
+        .project:hover .project__subtitle::after {
+            opacity: 1;
+        }
+
+        .project:hover .project__wrapper::before {
+            background: rgba(247, 242, 236, 0.8);
+        }
+    }
+</style>
