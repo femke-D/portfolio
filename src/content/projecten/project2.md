@@ -1,8 +1,8 @@
 ---
 title: "Mix Box"
-date: 2025-10-23
+date: 2025-02-01
 description: "Design"
-image: img/project2.png
+image: img/mixbox.png
 ---
 Design: brandboard & mobile design
 

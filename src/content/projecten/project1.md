@@ -1,8 +1,8 @@
 ---
 title: "Atouche"
-date: 2025-10-23
+date: 2025-05-01
 description: "Design"
-image: img/project1.png
+image: img/atouche.png
 ---
 
 Design: mood- & styleboard, logo-ontwerp, brandboard,  mock-ups

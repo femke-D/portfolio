@@ -1,8 +1,8 @@
 ---
 title: "Gardigan coffee"
-date: 2025-10-23
+date: 2025-02-01
 description: "Motion"
-image: img/project4.png
+image: img/gardigan.png
 ---
 
 ## WAT IS GARDIGAN COFFEE

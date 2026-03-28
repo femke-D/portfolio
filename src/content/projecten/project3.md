@@ -1,8 +1,8 @@
 ---
 title: "The respiro"
-date: 2025-10-23
-description: "Design, UX/UI & development"
-image: img/project3.png
+date: 2025-06-01
+description: "Design, UX & development"
+image: img/respiro.png
 ---
 
 ## WAT IS RESPIRO

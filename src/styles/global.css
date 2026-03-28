@@ -73,7 +73,8 @@ h2,
 .insight__button,
 .header-cta,
 .go-back-link,
-.quote-btn {
+.quote-btn,
+.btn-more {
     color: var(--color-dblauw);
     font-size: 14px;
 }
@@ -130,7 +131,8 @@ p {
     .insight__button,
     .header-cta,
     .go-back-link,
-    .quote-btn {
+    .quote-btn,
+    .btn-more {
         color: var(--color-dblauw);
         font-size: 16px;
     }
@@ -170,7 +172,8 @@ p {
     .insight__button,
     .header-cta,
     .go-back-link,
-    .quote-btn {
+    .quote-btn,
+    .btn-more {
         color: var(--color-dblauw);
         font-size: 16px;
     }
@@ -179,7 +182,8 @@ p {
     .insight__button::after,
     .header-cta::after,
     .go-back-link::after,
-    .quote-btn::after {
+    .quote-btn::after,
+    .btn-more::after {
         content: '→';
         display: inline-block;
         opacity: 0;
@@ -193,7 +197,8 @@ p {
     .insight__button:hover,
     .header-cta:hover,
     .go-back-link:hover,
-    .quote-btn:hover {
+    .quote-btn:hover,
+    .btn-more:hover {
         text-decoration: underline;
     }
 
@@ -201,7 +206,8 @@ p {
     .insight__button:hover::after,
     .header-cta:hover::after,
     .go-back-link:hover::after,
-    .quote-btn:hover::after {
+    .quote-btn:hover::after,
+    .btn-more:hover::after {
         opacity: 1;
         transform: translateX(0);
     }
