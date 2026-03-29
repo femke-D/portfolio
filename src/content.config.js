@@ -10,27 +10,13 @@ const projecten = defineCollection({
             date: z.date(),
             description: z.string(),
             image: image(),
-        }),
-});
-
-const quotes = defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/quotes" }),
-    schema: ({ image }) =>
-        z.object({
-            title: z.string(),
-            category: z.string().optional(),
-            zinnetjes: z.array(
-                z.object({
-                    text: z.string(),
-                    author: z.string(),
-                })
-            ),
-            description: z.string(),
-            images: z.array(image()).optional(),
+            screen: image().optional(),
+            category: z.union([z.string(), z.array(z.string())]).optional(),
+            tools: z.union([z.string(), z.array(z.string())]).optional(),
+            services: z.union([z.string(), z.array(z.string())]).optional(),
         }),
 });
 
 export const collections = {
-    projecten,
-    quotes
+    projecten
 };

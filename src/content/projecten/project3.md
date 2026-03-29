@@ -2,13 +2,16 @@
 title: "The respiro"
 date: 2025-06-01
 description: "Design, UX & development"
+category: ["design", "development", "ux"]
 image: img/respiro.png
+tools: "Figma, Adobe Photoshop"
+services: "Concept Development, Web Development, UX, UI & Web Design"
+screen: img/respiro/startscherm.png
 ---
+A website where a worthless object is transformed into a new, usable object, inspired by endangered bird species. The goal is creative reuse and creation centered on nature conservation.
 
-## WAT IS RESPIRO
+<a href="https://moodsave.be/int2/" class="project__figma">Visit website</a>
 
-Een website waarin een waardeloos object wordt getransformeerd tot een nieuw, bruikbaar object, op een subjectieve en creatieve manier. Het thema draait om bedreigde vogelsoorten: vanuit het gekozen object creëren we een beschermende omgeving die symbool staat voor zorg, hergebruik en bewustwording rond natuurbehoud. 
-
-## WAT HEB IK MOETEN DOEN
-
-Voor dit project heb ik het volledige concept zelf ontwikkeld, van idee tot realisatie. Ik ontwierp de visuele stijl en interface in Photoshop, waarbij ik aandacht besteedde aan gebruiksvriendelijkheid en esthetiek. Daarnaast programmeerde ik de website zelf met HTML, CSS, PHP en een databasekoppeling, zodat de inhoud dynamisch en functioneel is. Het resultaat is een compleet uitgewerkt project waarin design en techniek samenkomen tot een gebruiksvriendelijke, visueel sterke ervaring. 
+![respiro Brandboard](../../content/projecten/img/respiro/res1.png)
+![respiro Brandboard](../../content/projecten/img/respiro/res2.png)
+![respiro Brandboard](../../content/projecten/img/respiro/res3.png)

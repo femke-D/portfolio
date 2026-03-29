@@ -36,6 +36,7 @@
     --size-xs: 10px;
     --size-s: 12px;
     --size-sm: 15px;
+    --size-ssm: 20px;
     --size-ss: 25px;
     --size-mml: 30px;
     --size-mmml: 32px;
@@ -72,11 +73,10 @@ h2,
 .about__button,
 .insight__button,
 .header-cta,
-.go-back-link,
 .quote-btn,
 .btn-more {
     color: var(--color-dblauw);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .about-intro,
@@ -130,7 +130,6 @@ p {
     .about__button,
     .insight__button,
     .header-cta,
-    .go-back-link,
     .quote-btn,
     .btn-more {
         color: var(--color-dblauw);
@@ -150,10 +149,7 @@ p {
     .nav__logo {
         margin-left: 2rem;
     }
-
-
 }
-
 
 @media screen and (min-width: 80em) {
 
@@ -171,7 +167,6 @@ p {
     .about__button,
     .insight__button,
     .header-cta,
-    .go-back-link,
     .quote-btn,
     .btn-more {
         color: var(--color-dblauw);
@@ -181,7 +176,6 @@ p {
     .about__button::after,
     .insight__button::after,
     .header-cta::after,
-    .go-back-link::after,
     .quote-btn::after,
     .btn-more::after {
         content: '→';
@@ -196,7 +190,6 @@ p {
     .about__button:hover,
     .insight__button:hover,
     .header-cta:hover,
-    .go-back-link:hover,
     .quote-btn:hover,
     .btn-more:hover {
         text-decoration: underline;
@@ -205,7 +198,6 @@ p {
     .about__button:hover::after,
     .insight__button:hover::after,
     .header-cta:hover::after,
-    .go-back-link:hover::after,
     .quote-btn:hover::after,
     .btn-more:hover::after {
         opacity: 1;
