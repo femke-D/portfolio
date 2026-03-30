@@ -1,16 +1,33 @@
 ---
 title: "Mix Box"
-date: 2025-10-23
+date: 2025-02-01
 description: "Design"
-image: img/project2.png
+category: "design"
+image: img/mixbox.png
+tools: "Figma, Adobe illustrator"
+services: "App Design, branding"
+screen: img/mixbox/startscherm.png
 ---
-Design: brandboard & mobile design
+MixBox is a cocktail subscription that provides fresh ingredients and recipes to make easy, bar-quality cocktails at home. It targets eco-conscious establishments that want to enjoy themselves in a sustainable, environmentally friendly way.
 
-## WAT IS MIX BOX
+<a href="https://www.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4431-5444&viewport=-1393%2C339%2C0.14&t=WP5zKJFaEum4by6t-1&scaling=min-zoom&content-scaling=fixed&page-id=3093%3A3582" class="project__figma">Brandboard file</a>
 
-MixBox is een cocktail-abonnement dat bar-kwaliteit cocktails tot bij je thuis brengt, met verrassende recepten en verse ingrediënten. De service combineert premium kwaliteit, toegankelijkheid en duurzaamheid in één stijlvolle ervaring.Ik had gekozen voor een doelgroep dat bestaat uit eco-bewuste stedelingen van 25–40 jaar die waarde hechten aan duurzaamheid, kwaliteit en lokale producten. Ze zoeken een zorgeloze, milieuvriendelijke cocktailervaring met een lage ecologische voetafdruk.
+<a class="link" href="https://www.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4165-11578&viewport=380%2C418%2C0.37&t=b7LDF0recaG5H4GA-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4165%3A11578&show-proto-sidebar=1&page-id=4165%3A11417" class="project__figma">Protype file</a>
 
-## WAT HEB IK MOETEN DOEN
 
-Voor MixBox heb ik de volledige visuele identiteit uitgewerkt. Ik startte met een mood- en styleboard om de gewenste sfeer en stijl van het merk vast te leggen, en ontwierp vervolgens iconen, het logo en een compleet brandboard.
-Hierna heb ik het app-design ontwikkeld, inclusief intro- en loginpagina, navigatie-iconen en de mobiele interface. Het ontwerp is UX- en UI-vriendelijk, modern en consistent, zodat de gebruiker een soepele en aangename ervaring heeft.
+<iframe class="frame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4165-11578&viewport=380%2C418%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4165%3A11578&show-proto-sidebar=1&page-id=4165%3A11417&embed-host=share" allowfullscreen></iframe>
+
+![mixbox Brandboard](../../content/projecten/img/mixbox/B1.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B2.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B3.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B4.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B5.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B6.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B7.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B8.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B9.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B10.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B11.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B12.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B13.png)
+![mixbox Brandboard](../../content/projecten/img/mixbox/B14.png)

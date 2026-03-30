@@ -2,23 +2,105 @@
 import { getCollection } from "astro:content";
 import ProjectsCard from "./projectsCard.astro";
 
-const projecten = await getCollection("projecten");
+const allProjects = await getCollection("projecten");
+
+const gesorteerdeProjecten = allProjects.sort((a, b) => {
+    return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+
+const projectenPerJaar = gesorteerdeProjecten.reduce((acc, project) => {
+    const jaar = new Date(project.data.date).getFullYear().toString();
+    if (!acc[jaar]) {
+        acc[jaar] = [];
+    }
+    acc[jaar].push(project);
+    return acc;
+}, {});
+
+const jaren = Object.keys(projectenPerJaar).sort((a, b) => b - a);
+
+const categories = ["all", "design", "ux", "development"];
 ---
 
-<section>
+<section class="projects-section">
     <h2 class="projects__title">My work</h2>
-    <ul class="projects__list">
+
+    <div class="filter__container">
         {
-            projecten.map((project) => (
-                <li class="projects__item">
-                    <ProjectsCard project={project} />
-                </li>
+            categories.map((cat) => (
+                <button class="filter__btn" data-filter={cat}>
+                    {cat === "ux"
+                        ? "User Experience"
+                        : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                </button>
             ))
         }
-    </ul>
+    </div>
+
+    {
+        jaren.map((jaar) => (
+            <div class="year-group">
+                <h3 class="year-title">{jaar}</h3>
+                <ul class="projects__list">
+                    {projectenPerJaar[jaar].map((project) => {
+                        let rawCat = project.data.category;
+                        let catArray = [];
+                        if (Array.isArray(rawCat)) {
+                            catArray = rawCat;
+                        } else if (
+                            typeof rawCat === "string" &&
+                            rawCat.trim() !== ""
+                        ) {
+                            catArray = [rawCat];
+                        } else {
+                            const desc = (
+                                project.data.description || ""
+                            ).toLowerCase();
+                            if (desc.includes("design"))
+                                catArray.push("design");
+                            if (desc.includes("ux")) catArray.push("ux");
+                            if (desc.includes("development"))
+                                catArray.push("development");
+                            if (catArray.length === 0) catArray = ["all"];
+                        }
+
+                        const cleanCats = catArray
+                            .map((c) => String(c).toLowerCase().trim())
+                            .filter(Boolean);
+                        const projectId = project.slug || project.id || "";
+
+                        return (
+                            <li
+                                class="projects__item"
+                                data-category={JSON.stringify(cleanCats)}
+                            >
+                                <ProjectsCard
+                                    project={{ ...project, id: projectId }}
+                                />
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+        ))
+    }
 </section>
+<script src="../js/global.js"></script>
 
 <style>
+    .year-group {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto 4rem auto;
+    }
+
+    .year-title {
+        color: var(--color-red);
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--color-dblauw);
+        padding-bottom: 0.5rem;
+    }
+
     .projects__title {
         margin-bottom: 2rem;
     }
@@ -33,18 +115,57 @@ const projecten = await getCollection("projecten");
         margin-bottom: 5rem;
     }
 
+    .filter__container {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter__btn {
+        background: none;
+        border: none;
+        padding: 0.4rem 0.6rem;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: var(--size-sm);
+        color: var(--color-dblauw);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+    }
+
+    .filter__btn:hover {
+        color: var(--color-red);
+    }
+
+    .filter__btn.active {
+        color: var(--color-red);
+        border-bottom: 2px solid var(--color-red);
+    }
+
     @media screen and (min-width: 48em) {
         .projects__list {
             display: grid;
-            grid-template-columns: repeat(2, 280px);
-            gap: 4rem ;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            justify-items: center;
+        }
+        .filter__btn {
+            font-size: var(--size-ssm);
         }
     }
 
     @media screen and (min-width: 80em) {
         .projects__list {
-            grid-template-columns: repeat(2, 350px);
-            gap: 4rem ;
+            max-width: 1350px;
+        }
+        .filter__btn {
+            font-size: var(--size-ssm);
         }
     }
 </style>
