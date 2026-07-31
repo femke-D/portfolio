@@ -1,7 +1,7 @@
 ---
 title: "Discovery cities"
-date: 2026-01-01
-description: "development"
+date: 2025-12-01
+description: "Development"
 category: "development"
 image: img/city.png
 tools: "Figma, Adobe Photoshop"

@@ -1,6 +1,6 @@
 ---
 title: "ux research"
-date: 2026-01-01
+date: 2025-12-01
 description: "UX"
 category: "ux"
 image: img/research.png

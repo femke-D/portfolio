@@ -1,0 +1,30 @@
+---
+title: "MARA"
+date: 2026-02-01
+description: "UX"
+category: "ux"
+image: img/city.png
+tools: "Figma, Figjam, Behancen"
+services: "User Research, Interviews, Ideation, Prototyping, Usability Testing, Iteration"
+screen: img/city/startscherm.png
+---
+For this project, we designed a working prototype for a generation spaceship, a spacecraft where multiple generations of people live together during an interstellar journey. Our team selected the Housing Structure theme and focused on the following design challenge:
+
+"How might we design first independent living spaces that help young adults confidently transition to living on their own in a limited space?"
+
+Following the Double Diamond methodology, we conducted research, generated ideas, developed a concept, built a prototype, and iteratively improved it through user testing.
+
+
+<a class="research" href="https://www.behance.net/gallery/249094065/MARA" class="project__figma">Visit our project</a>
+
+<div class="second-text"> 
+<span class ="second-titel"> Concept </span>
+</br>
+MARA (Material Access & Repair Assistant) is designed to help young adults make the transition to independent living on a generation spaceship. Because residents grow up in a highly controlled environment with limited space and shared resources, learning practical life skills and taking responsibility for their own living space becomes an important part of becoming independent.
+
+MARA acts as a personal guide that supports residents in solving everyday problems while encouraging self-confidence, learning, and responsibility. Instead of simply providing a solution, the system helps users discover how to fix problems themselves by guiding them through different learning phases.
+
+The platform combines access to shared materials with personal guidance. When a resident encounters a problem, such as a broken chair or damaged object, MARA helps them identify the issue, choose the right tools, and complete the repair. If needed, users can receive support through hints or connect with other young adults for advice, creating both practical learning and social interaction.
+
+By turning mistakes and repairs into learning opportunities, MARA helps young residents develop the skills and confidence needed to live independently within the limited space of a generation spaceship.
+</div>
