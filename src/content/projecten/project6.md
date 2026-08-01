@@ -7,6 +7,7 @@ image: img/research.png
 tools: "Figma, Figjam, Behance"
 services: "User research, Interviews, Persona's"
 screen: img/research/startscherm.png
+partners: "Devine"
 ---
 For this assignment, we investigated how daily routines unfold within families. The goal was to understand how parents coordinate their schedules, what impact this has on the family structure, and what happens when there are no fixed routines. To do so, we used service design techniques from the left side of the Double Diamond, such as user research, observations, and analyzing insights, to gain a clear picture of the problem and the needs of families.
 

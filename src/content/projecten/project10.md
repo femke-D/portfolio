@@ -7,6 +7,7 @@ image: img/city.png
 tools: "Figma, Figjam, "
 services: "UX/UI Design, React Development, Supabase Database Integration, Map Integration (MapLibre), Interactive Web Development, Physical-Digital Integration (Printing), Prototyping & User Testing"
 screen: img/city/startscherm.png
+partners: "Devine , Visit Antwerp"
 ---
 For this project, we collaborated with Visit Antwerp to create a digital-first experience that encourages young urban travellers (18–36 years old) to choose Antwerp as their next city trip destination.
 

@@ -7,6 +7,7 @@ image: img/mixbox.png
 tools: "Figma, Adobe illustrator"
 services: "App Design, branding"
 screen: img/mixbox/startscherm.png
+partners: "Devine"
 ---
 MixBox is a cocktail subscription that provides fresh ingredients and recipes to make easy, bar-quality cocktails at home. It targets eco-conscious establishments that want to enjoy themselves in a sustainable, environmentally friendly way.
 
@@ -16,6 +17,8 @@ MixBox is a cocktail subscription that provides fresh ingredients and recipes to
 
 
 <iframe class="frame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4165-11578&viewport=380%2C418%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4165%3A11578&show-proto-sidebar=1&page-id=4165%3A11417&embed-host=share" allowfullscreen></iframe>
+
+The goal of this project was to create a brand board and design a mobile app based on provided wireframes, resulting in a consistent and user-friendly interface.
 
 ![mixbox Brandboard](../../content/projecten/img/mixbox/B1.png)
 ![mixbox Brandboard](../../content/projecten/img/mixbox/B2.png)

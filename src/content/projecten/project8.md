@@ -7,6 +7,7 @@ image: img/city.png
 tools: "Figma, Adobe Photoshop"
 services: "Concept Development, Web Development, WebRTC"
 screen: img/city/startscherm.png
+partners: "Devine"
 ---
 View and Influence Cities is an interactive experience in which users explore and transform a digital city. Movements and sound influence the city: tilting changes style or zoom, shaking distorts buildings, swiping and camera touch control day/night, and the microphone adjusts the crowding based on ambient sound.
 

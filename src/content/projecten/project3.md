@@ -7,6 +7,7 @@ image: img/respiro.png
 tools: "Figma, Adobe Photoshop"
 services: "Concept Development, Web Development, UX, UI & Web Design"
 screen: img/respiro/startscherm.png
+partners: "Devine"
 ---
 A website where a worthless object is transformed into a new, usable object, inspired by endangered bird species. The goal is creative reuse and creation centered on nature conservation.
 

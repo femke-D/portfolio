@@ -7,6 +7,7 @@ image: img/dior.png
 tools: "Figma, Adobe Photoshop, Adobe Illustrator"
 services: "Concept Development, Web Development, UX, UI & Web Design"
 screen: img/dior/startscherm.png
+partners: "Devine , MoMu Museum"
 ---
  The Dior assignment, I am working around the Fashion Museum Antwerp (MoMu), where fashion is viewed as more than just clothing, but as a way to showcase stories and culture. I visit the museum and draw inspiration from the collection and exhibitions. Using these insights, I create a creative output aimed at an adult audience.
 
