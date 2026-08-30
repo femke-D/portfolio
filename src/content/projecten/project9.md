@@ -11,7 +11,9 @@ partners: "Devine"
 ---
 For this project, we designed a working prototype for a generation spaceship, a spacecraft where multiple generations of people live together during an interstellar journey. Our team selected the Housing Structure theme and focused on the following design challenge:
 
+<div class= "vraag-research">
 "How might we design first independent living spaces that help young adults confidently transition to living on their own in a limited space?"
+</div>
 
 Following the Double Diamond methodology, we conducted research, generated ideas, developed a concept, built a prototype, and iteratively improved it through user testing.
 

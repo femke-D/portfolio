@@ -15,7 +15,7 @@ For this assignment, we investigated how daily routines unfold within families. 
 
 
 <div class= "vraag-research">
-Hoe beinvloedt de manier waarop ouders hun dagelijkse planning  afstemmen de structuur in het gezin, en wat gebeurt er als er geen routines zijn?
+Hoe beinvloedt de manier waarop ouders hun dagelijkse planning afstemmen de structuur in het gezin, en wat gebeurt er als er geen routines zijn?
 </div>
 
 ![research Brandboard](../../content/projecten/img/research/start1.png)

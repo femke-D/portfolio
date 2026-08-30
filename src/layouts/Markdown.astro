@@ -115,6 +115,42 @@ const { title, description, tools, services, screen } = Astro.props;
         color: var(--color-dblauw);
     }
 
+    /* Verberg alle project-info secties standaard */
+    :global(.project-info) {
+        display: none;
+    }
+
+    /* Toon alleen de actieve sectie */
+    :global(.project-info.active) {
+        display: block;
+    }
+
+    /* Stijl voor de switch knoppen (optioneel, naar jouw smaak) */
+    :global(.project-switch) {
+        display: flex;
+        gap: 1rem;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    :global(.switch-btn) {
+        background: none;
+        border: 2px solid var(--color-dblauw);
+        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: var(--size-sm);
+        color: var(--color-dblauw);
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    :global(.switch-btn.active) {
+        background-color: var(--color-dblauw);
+        color: white;
+        border-color: var(--color-dblauw);
+    }
+
     .back-button {
         align-items: center;
         color: var(--color-red);

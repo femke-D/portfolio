@@ -9,13 +9,16 @@ services: "UX/UI Design, React Development, Supabase Database Integration, Map I
 screen: img/city/startscherm.png
 partners: "Devine , Visit Antwerp"
 ---
-For this project, we collaborated with Visit Antwerp to create a digital-first experience that encourages young urban travellers (18–36 years old) to choose Antwerp as their next city trip destination.
+For this project, we collaborated with Visit Antwerp to create a digital-first experience that encourages young urban travellers (18 to 36 years old) to choose Antwerp as their next city trip destination.
 
 The challenge was to move away from traditional city marketing and create an authentic, personal experience that connects with the mindset of Gen Z, Zillennials, and Millennials. The goal was to show Antwerp beyond its well-known landmarks by focusing on hidden experiences, local communities, and personal interests.
 
 Our design challenge became:
 
-"How might we help Zillennials experience Antwerp through their own identity (flavour and style), using local communities and flexible discovery to reveal the taste of the city beyond the tourist perspective?"
+<div class= "vraag-research">
+How might we help Zillennials experience Antwerp through their own identity (flavour and style), using local communities and flexible discovery to reveal the taste of the city beyond the tourist perspective?
+</div>
+
 
 <div class="second-text"> 
 <span class ="second-titel"> Concept </span>
