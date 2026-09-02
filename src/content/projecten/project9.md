@@ -4,7 +4,7 @@ date: 2026-02-01
 description: "UX"
 category: "ux"
 image: img/city.png
-tools: "Figma, Figjam, Behancen"
+tools: "Figma, Figjam, Behance"
 services: "User Research, Interviews, Ideation, Prototyping, Usability Testing, Iteration"
 screen: img/city/startscherm.png
 partners: "Devine"
@@ -31,3 +31,5 @@ The platform combines access to shared materials with personal guidance. When a 
 
 By turning mistakes and repairs into learning opportunities, MARA helps young residents develop the skills and confidence needed to live independently within the limited space of a generation spaceship.
 </div>
+<a class="research" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
+

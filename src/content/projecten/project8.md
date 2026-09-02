@@ -23,6 +23,12 @@ View and Influence Cities is an interactive experience in which users explore an
 
 <a class="visit" href="https://city-ilj6.onrender.com/" class="project__figma">Visit website</a>
 
+![city Brandboard](../../content/projecten/img/city/result-london.png)
+![city Brandboard](../../content/projecten/img/city/result-paris.png)
+![city Brandboard](../../content/projecten/img/city/result-tokyo.png)
+![city Brandboard](../../content/projecten/img/city/gsm.png)
+![city Brandboard](../../content/projecten/img/city/gsm1.png)
+
 </div>
 
 <div class="project-info" id="arduino">
@@ -36,14 +42,6 @@ A rotary encoder controls the zoom in and out of the city, while a VL53L0X dista
 The physical interactions are enhanced with a servo motor, RGB LED, LEDs and a passive buzzer, providing visual, audio and physical feedback. This extension combines the existing digital experience with physical interaction to create a more immersive way of exploring the cities.
 
 </div>
-
-<a class="visit" href="https://city-ilj6.onrender.com/" class="project__figma">Visit website</a>
-
-![city Brandboard](../../content/projecten/img/city/result-london.png)
-![city Brandboard](../../content/projecten/img/city/result-paris.png)
-![city Brandboard](../../content/projecten/img/city/result-tokyo.png)
-![city Brandboard](../../content/projecten/img/city/gsm.png)
-![city Brandboard](../../content/projecten/img/city/gsm1.png)
 
 <script>
     const switchButtons = document.querySelectorAll('.switch-btn');
