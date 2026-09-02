@@ -3,10 +3,10 @@ title: "The portal"
 date: 2026-06-01
 description:  "Design, UX & development"
 category: ["design", "development", "ux"]
-image: img/city.png
+image: img/portal.png
 tools: "Figma, Figjam, After effects, Adobe Audition, Adobe illustrator"
 services: "UX/UI Design, React Development, Supabase Database Integration, Map Integration (MapLibre), Interactive Web Development, Physical-Digital Integration (Printing), Prototyping & User Testing"
-screen: img/city/startscherm.png
+screen: img/portal/startscherm.png
 partners: "Devine , Visit Antwerp"
 ---
 For this project, we collaborated with Visit Antwerp to create a digital-first experience that encourages young urban travellers (18 to 36 years old) to choose Antwerp as their next city trip destination.
@@ -36,6 +36,9 @@ Rather than providing an exhaustive list of recommendations, The Portal offers a
 For people who have not visited Antwerp yet, an online campaign creates curiosity around The Portal and the hidden side of the city, encouraging them to plan their next visit.
 </div>
 
+<a class="research" href="https://github.com/MargotRopcke/integration4" class="project__figma">See our website</a>
+
+
 <div class="second-text"> 
 <span class ="second-titel"> Local & Online Connection </span>
 </br>
@@ -44,4 +47,11 @@ The Portal runs locally on the installation screen, allowing the interactive exp
 The local Portal and online web app are connected through Supabase. When a visitor completes the Portal, their selections are stored in the database and a unique QR code is generated. Scanning the QR code opens the online web app and retrieves their personalised locations, allowing them to continue exploring Antwerp on their own device.
 </div>
 
-<a class="research" href="" class="project__figma">Visit our project</a>
+<a class="research" href="https://github.com/MargotRopcke/integration4" class="project__figma">See our github file</a>
+
+![research Brandboard](../../content/projecten/img/research/start1.png)
+![research Brandboard](../../content/projecten/img/research/start2.png)
+![research Brandboard](../../content/projecten/img/research/start3.png)
+![research Brandboard](../../content/projecten/img/research/start4.png)
+![research Brandboard](../../content/projecten/img/research/start5.png)
+![research Brandboard](../../content/projecten/img/research/start6.png)

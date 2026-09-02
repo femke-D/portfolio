@@ -3,10 +3,10 @@ title: "MARA"
 date: 2026-02-01
 description: "UX"
 category: "ux"
-image: img/city.png
+image: img/mara.png
 tools: "Figma, Figjam, Behance"
 services: "User Research, Interviews, Ideation, Prototyping, Usability Testing, Iteration"
-screen: img/city/startscherm.png
+screen: img/mara/startscherm.png
 partners: "Devine"
 ---
 For this project, we designed a working prototype for a generation spaceship, a spacecraft where multiple generations of people live together during an interstellar journey. Our team selected the Housing Structure theme and focused on the following design challenge:
