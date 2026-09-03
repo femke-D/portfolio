@@ -36,7 +36,7 @@ Rather than providing an exhaustive list of recommendations, The Portal offers a
 For people who have not visited Antwerp yet, an online campaign creates curiosity around The Portal and the hidden side of the city, encouraging them to plan their next visit.
 </div>
 
-<a class="research" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">See our UX-website</a>
+<a class="research" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">Visit UX-website</a>
 
 
 <div class="second-text"> 
@@ -47,7 +47,7 @@ The Portal runs locally on the installation screen, allowing the interactive exp
 The local Portal and online web app are connected through Supabase. When a visitor completes the Portal, their selections are stored in the database and a unique QR code is generated. Scanning the QR code opens the online web app and retrieves their personalised locations, allowing them to continue exploring Antwerp on their own device.
 </div>
 
-<a class="research" href="https://github.com/MargotRopcke/integration4" class="project__figma">See our github file</a>
+<a class="research" href="https://github.com/MargotRopcke/integration4" class="project__figma">Visit github file</a>
 
 ![research Brandboard](../../content/projecten/img/research/start1.png)
 ![research Brandboard](../../content/projecten/img/research/start2.png)

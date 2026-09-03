@@ -18,7 +18,7 @@ For this project, we designed a working prototype for a generation spaceship, a 
 Following the Double Diamond methodology, we conducted research, generated ideas, developed a concept, built a prototype, and iteratively improved it through user testing.
 
 
-<a class="research" href="https://www.behance.net/gallery/249094065/MARA" class="project__figma">Visit our project</a>
+<a class="research" href="https://www.behance.net/gallery/249094065/MARA" class="project__figma">Visit website</a>
 
 <div class="second-text"> 
 <span class ="second-titel"> Concept </span>
