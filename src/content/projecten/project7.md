@@ -16,4 +16,3 @@ Hidden Self is an interactive experience about self-expression and authenticity.
 
 ![hidden Brandboard](../../content/projecten/img/hidden/scherm1.png)
 ![hidden Brandboard](../../content/projecten/img/hidden/scherm2.png)
-![hidden Brandboard](../../content/projecten/img/hidden/scherm3.png)![hidden Brandboard](../../content/projecten/img/hidden/scherm4.png)

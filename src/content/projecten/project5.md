@@ -5,7 +5,7 @@ description: "Design, UX & development"
 category: ["design", "development", "ux"]
 image: img/dior.png
 tools: "Figma, Adobe Photoshop, Adobe Illustrator"
-services: "Concept Development, Web Development, UX, UI & Web Design"
+services: "Concept Development, UX/UI Design, Web Development & Responsive Design"
 screen: img/dior/startscherm.png
 partners: "Devine , MoMu Museum"
 ---
@@ -20,10 +20,4 @@ partners: "Devine , MoMu Museum"
 </div>
 
 ![dior Brandboard](../../content/projecten/img/dior/desktop1.png) 
-![dior Brandboard](../../content/projecten/img/dior/desktop2.png) 
-![dior Brandboard](../../content/projecten/img/dior/desktop3.png)
-![dior Brandboard](../../content/projecten/img/dior/desktop4.png) 
 ![dior Brandboard](../../content/projecten/img/dior/mobile1.png)
- ![dior Brandboard](../../content/projecten/img/dior/mobile2.png)
- ![dior Brandboard](../../content/projecten/img/dior/mobile3.png)
-![dior Brandboard](../../content/projecten/img/dior/mobile4.png) 

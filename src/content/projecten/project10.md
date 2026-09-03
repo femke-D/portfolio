@@ -36,7 +36,7 @@ Rather than providing an exhaustive list of recommendations, The Portal offers a
 For people who have not visited Antwerp yet, an online campaign creates curiosity around The Portal and the hidden side of the city, encouraging them to plan their next visit.
 </div>
 
-<a class="research" href="https://github.com/MargotRopcke/integration4" class="project__figma">See our website</a>
+<a class="research" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">See our UX-website</a>
 
 
 <div class="second-text"> 

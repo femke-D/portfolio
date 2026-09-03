@@ -1,5 +1,5 @@
 ---
-title: "ux research"
+title: "Family Routines"
 date: 2025-12-01
 description: "UX"
 category: "ux"
@@ -11,16 +11,10 @@ partners: "Devine"
 ---
 For this assignment, we investigated how daily routines unfold within families. The goal was to understand how parents coordinate their schedules, what impact this has on the family structure, and what happens when there are no fixed routines. To do so, we used service design techniques from the left side of the Double Diamond, such as user research, observations, and analyzing insights, to gain a clear picture of the problem and the needs of families.
 
-<a class="research" href="https://www.behance.net/gallery/240442997/Assignment-ux" class="project__figma">Visit the research</a>
-
+<a class="research" href="https://www.figma.com/proto/3Cs1oElNMu3MG5AYI0Hpqu/design-exp?node-id=1025-122&viewport=-1782%2C-346%2C0.39&t=X0Zw125MrAxv6chG-1&scaling=min-zoom&content-scaling=fixed&page-id=1025%3A100
+" class="project__figma">Research file</a>
 
 <div class= "vraag-research">
-Hoe beinvloedt de manier waarop ouders hun dagelijkse planning afstemmen de structuur in het gezin, en wat gebeurt er als er geen routines zijn?
-</div>
+How does the way parents coordinate their daily schedules affect the structure of the family, and what happens when there are no routines?</div>
 
-![research Brandboard](../../content/projecten/img/research/start1.png)
-![research Brandboard](../../content/projecten/img/research/start2.png)
-![research Brandboard](../../content/projecten/img/research/start3.png)
-![research Brandboard](../../content/projecten/img/research/start4.png)
-![research Brandboard](../../content/projecten/img/research/start5.png)
-![research Brandboard](../../content/projecten/img/research/start6.png)
+![research Brandboard](../../content/projecten/img/research/bord.png)
