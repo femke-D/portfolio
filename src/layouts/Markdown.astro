@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import video from "../assets/gardigan.mp4";
+import promo from "../assets/promo.mp4";
+import casemovie from "../assets/casemovie.mp4";
 
 const { title, description, tools, services, screen } = Astro.props;
 ---
@@ -57,6 +59,38 @@ const { title, description, tools, services, screen } = Astro.props;
                         class="project-video"
                     >
                         <source src={video} type="video/mp4" />
+                    </video>
+                )
+            }
+            {
+                title === "The portal" && (
+                    <video
+                        class="video_portal"
+                        width="60%"
+                        height="auto"
+                        controls
+                        muted
+                        playsinline
+                        preload="metadata"
+                        class="project-video"
+                    >
+                        <source src={promo} type="video/mp4" />
+                    </video>
+                )
+            }
+            {
+                title === "The portal" && (
+                    <video
+                        class="video_portal"
+                        width="60%"
+                        height="auto"
+                        controls
+                        muted
+                        playsinline
+                        preload="metadata"
+                        class="project-video"
+                    >
+                        <source src={casemovie} type="video/mp4" />
                     </video>
                 )
             }
