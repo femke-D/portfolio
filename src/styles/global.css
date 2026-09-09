@@ -71,7 +71,7 @@ h2,
 
 
 
-.about__button,
+.about-button,
 .insight__button,
 .header-cta,
 .quote-btn,
@@ -83,7 +83,7 @@ h2,
 .about-intro,
 .about__greeting {
     font-family: var(--font-detail);
-    font-size: var(--size-ml);
+    font-size: var(--size-xxl);
     color: var(--color-red);
 }
 
@@ -100,8 +100,7 @@ p {
 
 .work__list,
 .about__work-list,
-.projects__list,
-.skills__list {
+.projects__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -128,7 +127,7 @@ p {
         font-size: var(--size-sm);
     }
 
-    .about__button,
+    .about-button,
     .insight__button,
     .header-cta,
     .quote-btn,
@@ -165,7 +164,7 @@ p {
         font-size: var(--size-sm);
     }
 
-    .about__button,
+    .about-button,
     .insight__button,
     .header-cta,
     .quote-btn,
@@ -174,7 +173,7 @@ p {
         font-size: 16px;
     }
 
-    .about__button::after,
+    .about-button::after,
     .insight__button::after,
     .header-cta::after,
     .quote-btn::after,
@@ -188,7 +187,7 @@ p {
         pointer-events: none;
     }
 
-    .about__button:hover,
+    .about-button:hover,
     .insight__button:hover,
     .header-cta:hover,
     .quote-btn:hover,
@@ -196,7 +195,7 @@ p {
         text-decoration: underline;
     }
 
-    .about__button:hover::after,
+    .about-button:hover::after,
     .insight__button:hover::after,
     .header-cta:hover::after,
     .quote-btn:hover::after,

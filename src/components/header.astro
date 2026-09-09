@@ -31,7 +31,9 @@ import header10 from "../assets/header-10.png";
             <img class="header-img" src={header10.src} alt="Header image" />
         </div>
         <p class="header-start">I am Femke Denoo</p>
+    </div>
 
+    <div class="block-skill">
         <h1 class="header-title ux">UX / UI</h1>
         <h1 class="header-title design">DESIGNER</h1>
         <h1 class="header-title development">DEVELOPER</h1>
@@ -39,6 +41,11 @@ import header10 from "../assets/header-10.png";
 </header>
 
 <style>
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    
     .header-grid {
         display: grid;
         grid-template-columns: repeat(4, auto);
@@ -48,6 +55,7 @@ import header10 from "../assets/header-10.png";
     .header-cta {
         grid-column: 6/8;
         grid-row: 1;
+        margin-right: -5rem;
         align-self: end;
         justify-self: end;
     }
@@ -62,6 +70,7 @@ import header10 from "../assets/header-10.png";
         grid-row: 1 / 6;
         z-index: 1;
         justify-self: center;
+        margin-left: 4rem;
     }
 
     .header__img-container {
@@ -83,27 +92,38 @@ import header10 from "../assets/header-10.png";
         opacity: 1;
     }
 
-    .ux,
-    .design,
-    .development {
+    .block-skill {
+        margin-top: -5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 25px;
+    }
+
+    .header-title {
+        margin: 0;
+        padding: 5px 15px;
+        width: 100%;
+        box-sizing: border-box;
+
         font-family: var(--font-header);
+        font-size: 80px;
+        line-height: 1;
         color: var(--color-dblauw);
-        font-size: var(--size-ml);
+        background-color: var(--color-lbeige);
     }
 
     .ux {
-        grid-column: 6 / 8;
-        grid-row: 5;
-        margin-bottom: -1rem;
+        grid-column: 1 /-1;
+        grid-row: 1;
     }
     .design {
-        grid-column: 6 / 8;
-        grid-row: 6;
-        margin-top: 0;
+        grid-column: 1 /-1;
+        grid-row: 2;
     }
     .development {
-        grid-column: 6 / 8;
-        grid-row: 7;
+        grid-column: 1 /-1;
+        grid-row: 3;
     }
 
     @media screen and (min-width: 48em) {
@@ -119,31 +139,6 @@ import header10 from "../assets/header-10.png";
             grid-column: 2 / 8;
             grid-row: 3 / 5;
         }
-
-        .block-ux {
-            grid-column: 3 / 6;
-            margin-left: -3rem;
-            grid-row: 2;
-        }
-
-        .block-design {
-            grid-column: 6 / 8;
-            grid-row: 3;
-            margin-bottom: -6rem;
-        }
-
-        .block-dev {
-            grid-column: 3 / 5;
-            grid-row: 6;
-            margin-left: 3rem;
-            margin-bottom: -2rem;
-        }
-
-        .ux,
-        .design,
-        .development {
-            font-size: var(--size-l);
-        }
     }
 
     @media screen and (min-width: 80em) {
@@ -155,29 +150,6 @@ import header10 from "../assets/header-10.png";
         .header__img-container {
             grid-column: 2 / 8;
             grid-row: 2 / 6;
-        }
-
-        .block-ux {
-            grid-column: 3 / 5;
-            grid-row: 1;
-        }
-
-        .block-design {
-            grid-column: 6 / 8;
-            grid-row: 4;
-            margin-top: -3rem;
-        }
-
-        .block-dev {
-            grid-column: 4 / 6;
-            grid-row: 5;
-            margin-left: -8rem;
-            margin-bottom: -8rem;
-        }
-        .ux,
-        .design,
-        .development {
-            font-size: var(--size-xxl);
         }
     }
 </style>
