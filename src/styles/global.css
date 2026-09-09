@@ -42,8 +42,9 @@
     --size-mmml: 32px;
     --size-ml: 50px;
     --size-l: 70px;
-    --size-xl: 80px;
-    --size-xxl: 100px
+    --size-xl: 90px;
+    --size-xxl: 100px;
+    --size-xxxl: 150px;
 }
 
 body {
