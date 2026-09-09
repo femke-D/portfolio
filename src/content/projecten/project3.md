@@ -19,8 +19,8 @@ The assignment is to choose an everyday object and give it three alternative use
 I chose a Christmas ornament with the theme giving endangered birds a second chance. Instead of being forgotten after Christmas, old or broken ornaments get a new purpose by providing birds with food, shelter or a place to grow. The ornament becomes a symbol of hope, protection and new life.
 </div>
 
-<a class="visit" href="https://moodsave.be/int2/" class="project__figma">Visit website</a>
-<a class="visit" href="https://www.figma.com/board/Qgu3dCaIIdWy9iEvMhteUS/integration-2-DF?node-id=0-1&t=B8ivZ99QxeEoaZxr-1
+<a class= "see-button" href="https://moodsave.be/int2/" class="project__figma">Visit website</a>
+<a class= "see-button" href="https://www.figma.com/board/Qgu3dCaIIdWy9iEvMhteUS/integration-2-DF?node-id=0-1&t=B8ivZ99QxeEoaZxr-1
 " class="project__figma"> Progress file</a>
 
 

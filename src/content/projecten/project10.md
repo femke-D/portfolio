@@ -36,7 +36,7 @@ Rather than providing an exhaustive list of recommendations, The Portal offers a
 For people who have not visited Antwerp yet, an online campaign creates curiosity around The Portal and the hidden side of the city, encouraging them to plan their next visit.
 </div>
 
-<a class="research" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">Visit UX-website</a>
+<a class= "see-button" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">Visit UX-website</a>
 
 
 <div class="second-text"> 
@@ -47,12 +47,12 @@ The Portal runs locally on the installation screen, allowing the interactive exp
 The local Portal and online web app are connected through Supabase. When a visitor completes the Portal, their selections are stored in the database and a unique QR code is generated. Scanning the QR code opens the online web app and retrieves their personalised locations, allowing them to continue exploring Antwerp on their own device.
 </div>
 
-<a class="research" href="https://github.com/MargotRopcke/integration4" class="project__figma">Visit github file</a>
+<a class= "see-button" href="https://github.com/MargotRopcke/integration4" class="project__figma">Visit github file</a>
 
-<a class="research" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-20141&viewport=499%2C368%2C0.04&t=UeoJEOEeBzdYL8MM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A20141&show-proto-sidebar=1&page-id=5041%3A18339
+<a class= "see-button" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-20141&viewport=499%2C368%2C0.04&t=UeoJEOEeBzdYL8MM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A20141&show-proto-sidebar=1&page-id=5041%3A18339
 " class="project__figma">Prototype The Portal</a>
 
-<a class="research" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-18924&viewport=-1063%2C147%2C0.11&t=f9EyIhTgyxXCpzYE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A18924&show-proto-sidebar=1&page-id=5041%3A18339
+<a class= "see-button" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-18924&viewport=-1063%2C147%2C0.11&t=f9EyIhTgyxXCpzYE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A18924&show-proto-sidebar=1&page-id=5041%3A18339
 " class="project__figma">Prototype mobile</a>
 
 

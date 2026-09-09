@@ -18,7 +18,7 @@ For this project, we designed a working prototype for a generation spaceship, a 
 Following the Double Diamond methodology, we conducted research, generated ideas, developed a concept, built a prototype, and iteratively improved it through user testing.
 
 
-<a class="research" href="https://www.behance.net/gallery/249094065/MARA" class="project__figma">Visit website</a>
+<a class= "see-button"" href="https://www.behance.net/gallery/249094065/MARA" class="project__figma">Visit website</a>
 
 <div class="second-text"> 
 <span class ="second-titel"> Concept </span>
@@ -31,5 +31,5 @@ The platform combines access to shared materials with personal guidance. When a 
 
 By turning mistakes and repairs into learning opportunities, MARA helps young residents develop the skills and confidence needed to live independently within the limited space of a generation spaceship.
 </div>
-<a class="research" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
+<a class= "see-button" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
 
