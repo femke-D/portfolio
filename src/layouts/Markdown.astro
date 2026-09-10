@@ -31,12 +31,12 @@ const { title, description, tools, services, screen } = Astro.props;
                 <br />
                 {description}
             </p>
-            <p>
+            <p class="project__description">
                 <strong class="word__tools">Tools:</strong>
                 <br />
                 {tools}
             </p>
-            <p>
+            <p class="project__description">
                 <strong class="word__services">Services:</strong>
                 <br />
                 {services}
@@ -127,6 +127,7 @@ const { title, description, tools, services, screen } = Astro.props;
 
     :global(.see-button) {
         color: var(--color-dblauw);
+        font-size: var(--size-ssm);
     }
 
     :global(.project-switch) {
@@ -203,6 +204,7 @@ const { title, description, tools, services, screen } = Astro.props;
         display: flex;
         flex-direction: column;
         margin-left: 4rem;
+        margin-bottom: 4rem;
     }
 
     .word__category,
@@ -212,27 +214,24 @@ const { title, description, tools, services, screen } = Astro.props;
         font-size: 30px;
         font-weight: 200;
         display: block;
-        margin-bottom: -.5rem;
+        margin-bottom: -0.5rem;
     }
 
     .project__description {
         font-size: 20px;
-        font-weight: 200;
-        margin-top: -1rem;
+        font-weight: 300;
     }
 
     :global(.project__content p),
     :global(.second-text),
     :global(.vraag-research) {
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: 400;
         line-height: 1.8;
         max-width: auto;
-        margin-left: 4rem;
-        margin-right: 4rem;
     }
 
     :global(.vraag-research) {
-        margin-top: 10rem;
         font-weight: bold;
     }
 

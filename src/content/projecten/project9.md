@@ -14,11 +14,10 @@ For this project, we designed a working prototype for a generation spaceship, a 
 <div class= "vraag-research">
 "How might we design first independent living spaces that help young adults confidently transition to living on their own in a limited space?"
 </div>
+<a class= "see-button" href="https://www.behance.net/gallery/249094065/MARA"> Visit website</a>
 
-Following the Double Diamond methodology, we conducted research, generated ideas, developed a concept, built a prototype, and iteratively improved it through user testing.
 
 
-<a class= "see-button"" href="https://www.behance.net/gallery/249094065/MARA" class="project__figma">Visit website</a>
 
 <div class="second-text"> 
 <span class ="second-titel"> Concept </span>
