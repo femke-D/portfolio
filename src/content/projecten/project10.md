@@ -24,15 +24,19 @@ How might we help Zillennials experience Antwerp through their own identity (fla
 <span class ="second-titel"> Concept </span>
 </br>
 "One step and you enter your version of Antwerp."
-
+</br>
 The Portal is a physical and digital experience that helps Zillennials discover a more personal and hidden side of Antwerp based on their own interests in Style and Flavour.
-
+</br>
+</br>
 The concept responds to the insight that many young travellers already visit Antwerp, but often leave after a short visit because they only discover the well-known places. The Portal creates a second dreaming phase during their visit by inspiring them to explore more of the city and discover places that match their identity.
-
+</br>
+</br>
 Visitors enter a walk-in installation where they select their preferences. Based on their choices, The Portal recommends curated local spots and experiences that fit their personal taste. Users can save their favourite locations and receive a personalised map through QR to continue exploring Antwerp.
-
+</br>
+</br>
 Rather than providing an exhaustive list of recommendations, The Portal offers a curated selection that acts as a starting point for exploration. By leaving room for discovery, visitors are encouraged to explore beyond the suggested spots and find other places throughout Antwerp that spark their interest.
-
+</br>
+</br>
 For people who have not visited Antwerp yet, an online campaign creates curiosity around The Portal and the hidden side of the city, encouraging them to plan their next visit.
 </div>
 
@@ -43,7 +47,8 @@ For people who have not visited Antwerp yet, an online campaign creates curiosit
 <span class ="second-titel"> Local & Online Connection </span>
 </br>
 The Portal runs locally on the installation screen, allowing the interactive experience and printing process to work directly on the device. The web app, however, is deployed online through GitHub Pages, so users can access their personalised results on their phone.
-
+</br>
+</br>
 The local Portal and online web app are connected through Supabase. When a visitor completes the Portal, their selections are stored in the database and a unique QR code is generated. Scanning the QR code opens the online web app and retrieves their personalised locations, allowing them to continue exploring Antwerp on their own device.
 </div>
 
@@ -60,3 +65,4 @@ The local Portal and online web app are connected through Supabase. When a visit
 ![research Brandboard](../../content/projecten/img/portal/booth.jpg)
 ![research Brandboard](../../content/projecten/img/portal/instalation.jpg)
 ![research Brandboard](../../content/projecten/img/portal/portal.jpg)
+

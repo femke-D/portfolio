@@ -99,14 +99,7 @@ const { title, description, tools, services, screen } = Astro.props;
 </div>
 
 <style>
-    :global(.see-button) {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-
-    :global(.see-button::after) {
+    /*:global(.see-button::after) {
         content: "→";
         display: inline-block;
         opacity: 0;
@@ -114,16 +107,16 @@ const { title, description, tools, services, screen } = Astro.props;
         transform: translateX(-10px);
         transition: all 0.3s ease;
         pointer-events: none;
-    }
+    }*/
 
-    :global(.see-button:hover::after) {
+    /*:global(.see-button:hover::after) {
         opacity: 1;
         transform: translateX(0);
     }
 
     :global(.see-button:hover) {
         color: var(--color-red);
-    }
+    }*/
 
     :global(.see-button) {
         color: var(--color-dblauw);
@@ -132,9 +125,13 @@ const { title, description, tools, services, screen } = Astro.props;
 
     :global(.project-switch) {
         display: flex;
-        gap: 1rem;
-        margin-left: 4rem;
-        margin-bottom: 2rem;
+        gap: 4rem;
+        justify-content: center;
+        margin-bottom: 8rem;
+    }
+    
+    :global(.subtitle) {
+        font-size: var(--size-ml);
     }
 
     :global(.switch-btn) {
@@ -143,7 +140,7 @@ const { title, description, tools, services, screen } = Astro.props;
         padding: 0.5rem 1.5rem;
         cursor: pointer;
         font-family: inherit;
-        font-size: var(--size-sm);
+        font-size: var(--size-ml);
         color: var(--color-dblauw);
         text-transform: uppercase;
         transition: all 0.3s ease;
@@ -155,11 +152,21 @@ const { title, description, tools, services, screen } = Astro.props;
         border-color: var(--color-dblauw);
     }
 
+    :global(.project-tab) {
+        display: none;
+        flex-direction: column;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    :global(.project-tab.active) {
+        display: flex;
+    }
+
     .back-button {
-        align-items: center;
         color: var(--color-red);
-        text-decoration: none;
-        margin-left: 2rem;
+        margin: 6rem;
+        font-size: 40px;
     }
 
     .back-button::before {
@@ -171,16 +178,11 @@ const { title, description, tools, services, screen } = Astro.props;
 
     h1.project__title {
         margin-left: 4rem;
-        font-size: var(--size-l);
+        font-size: var(--size-xxl);
+        margin-top: -3rem;
     }
 
     .markdown-layout {
-        overflow-x: hidden;
-        width: 100%;
-        margin-top: 5rem;
-    }
-
-    .project-header {
         margin-top: 10rem;
     }
 
@@ -211,24 +213,36 @@ const { title, description, tools, services, screen } = Astro.props;
     .word__tools,
     .word__services {
         color: var(--color-red);
-        font-size: 30px;
+        font-size: 45px;
         font-weight: 200;
         display: block;
-        margin-bottom: -0.5rem;
+        margin-bottom: -4.5rem;
     }
 
     .project__description {
-        font-size: 20px;
+        font-size: 35px;
         font-weight: 300;
+        max-width: 800px;
+        line-height: 1.8;
     }
 
     :global(.project__content p),
     :global(.second-text),
     :global(.vraag-research) {
-        font-size: 20px;
+        font-size: 40px;
         font-weight: 400;
         line-height: 1.8;
-        max-width: auto;
+        max-width: 850px;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    :global(.see-button) {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 4rem;
+        font-size: 50px;
+        margin-top: 5rem;
     }
 
     :global(.vraag-research) {
@@ -238,15 +252,10 @@ const { title, description, tools, services, screen } = Astro.props;
     :global(.second-text) {
         margin-top: 6rem;
     }
+
     :global(.second-titel) {
         font-size: 45px;
         font-weight: bold;
-    }
-
-    .project__content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
     }
 
     :global(.project__figma) {
@@ -256,15 +265,16 @@ const { title, description, tools, services, screen } = Astro.props;
         color: var(--color-dblauw);
     }
 
-    :global(.project__figma:hover) {
+    /*:global(.project__figma:hover) {
         transform: scale(1.05);
-    }
+    }*/
 
     :global(.project__content img) {
-        max-width: 100%;
+        max-width: 600px;
         height: auto;
         display: block;
-        padding-top: 5rem;
+        padding-top: 3rem;
+        justify-self: center;
     }
 
     :global(.frame) {
@@ -284,9 +294,11 @@ const { title, description, tools, services, screen } = Astro.props;
         font-size: 45px;
     }
 
-    .video_gardigan {
+    :global(.video_gardigan),
+    :global(.video_portal) {
         align-self: center;
         width: 100%;
+        margin-top: 5rem;
     }
 
     @media screen and (min-width: 48em) {

@@ -20,4 +20,3 @@ partners: "Devine , MoMu Museum"
 </div>
 
 ![dior Brandboard](../../content/projecten/img/dior/desktop1.png) 
-![dior Brandboard](../../content/projecten/img/dior/mobile1.png)
