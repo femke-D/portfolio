@@ -3,154 +3,85 @@ import me from "../assets/me.png";
 ---
 
 <section class="about">
-    <h2 class="about-titel">About me</h2>
-    <p class="about-intro">Hey</p>
-    <div class="about-img-wrapper">
-        <img
-            class="about-img"
-            src={me.src}
-            loading="lazy"
-            alt="Foto van mezelf"
-        />
+    <div class="about-content">
+        <h2 class="about-title">About me</h2>
+
+        <p class="about-text">
+            I am Femke Denoo, a Digital Design & Development (Devine) student at
+            the Royal Academy of Fine Arts (KASK) and Howest University of
+            Applied Sciences, with a strong interest in digital creation and an
+            open mindset for new challenges and experiences.
+            <br />
+            <br />
+            What drives me? Curiosity. I want to keep learning, discover other cultures,
+            and challenge myself to constantly improve. That desire to grow forms
+            the basis of my work as a designer.
+        </p>
+
+        <a href="/portfolio/about" class="about-button">Get to know me</a>
     </div>
 
-    <p class="about-tekst">
-        I am Femke Denoo, a Digital Design & Development (Devine) student at the
-        Royal Academy of Fine Arts (KASK) and Howest University of Applied
-        Sciences, with a strong interest in digital creation and an open mindset
-        for new challenges and experiences.
-        <br />
-        <br />
-        What drives me? Curiosity. I want to keep learning, discover other cultures,
-        and challenge myself to constantly improve. That desire to grow forms the
-        basis of my work as a designer.
-    </p>
-    <a href="/portfolio/about" class="about__button">Get to know me</a>
+    <div class="about-visual">
+        <p class="about-intro">Hey</p>
+
+        <div class="about-img-wrapper">
+            <img
+                class="about-img"
+                src={me.src}
+                loading="lazy"
+                alt="Foto van mezelf"
+            />
+        </div>
+    </div>
 </section>
 
 <style>
     .about {
         display: grid;
-        grid-template-columns: 140px 1fr;
-        grid-template-rows: auto auto auto;
-        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
 
-    .about-titel {
-        grid-column: 1 / -1;
-        margin-bottom: 0.5rem;
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-title {
+        margin: 0 0 30px;
+    }
+
+    .about-text {
+        margin: 0 0 30px;
+        width: 463px;
+    }
+
+    .about-visual {
+        position: relative;
     }
 
     .about-intro {
-        grid-column: 1;
-        margin: 0 0 10px 120px;
-        margin-bottom: -20px;
-        z-index: 1;
+        position: absolute;
+        top: -2rem;
+        left: -3rem;
+        margin: 0;
+        z-index: 2;
     }
+
     .about-img-wrapper {
-        grid-column: 1;
-        grid-row: 3;
-        max-width: 100%;
-        justify-self: start;
+        width: 100%;
     }
 
     .about-img {
-        width: 100%;
+        width: auto;
         height: auto;
-        display: block;
     }
-
-    .about-tekst {
-        grid-column: 2;
-        grid-row: 3;
-        line-height: 1.7;
-        margin-top: 20px;
-        margin-left: 1rem;
-    }
-
-    .about__button {
-        grid-column: 2;
-        grid-row: 4;
-        justify-self: end;
-        margin-top: 2rem;
-    }
-
     @media screen and (min-width: 48em) {
-        .about {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .about-titel {
-            grid-column: 1 / -1;
-            margin-left: 2rem;
-            margin-right: -2rem;
-            justify-self: center;
-            align-self: center;
-            margin-bottom: 1rem;
-        }
-
-        .about-intro {
-            grid-column: 2;
-            font-size: var(--size-xl);
-            margin-left: -5rem;
-            margin-top: 2rem;
-        }
-
-        .about-tekst,
-        .about__button {
-            margin-top: -1rem;
-            margin-right: 8rem;
-            margin-left: -2rem;
-        }
-
-        .about-img-wrapper {
-            margin-left: 10rem;
-            grid-row: 2 / 4;
-            max-width: 380px;
-        }
     }
 
     @media screen and (min-width: 80em) {
-        .about {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto 8rem auto auto;
-            margin-left: 3rem;
-            padding-bottom: 5rem;
-        }
-
-        .about-titel {
-            grid-column: 1 / -1;
-            margin-left: 2rem;
-            margin-right: 0;
-            justify-self: center;
-            align-self: center;
-        }
-
-        .about-intro {
-            grid-column: 2;
-            grid-row: 2;
-            font-size: var(--size-xxl);
-            margin-left: -10rem;
-        }
-
-        .about-tekst {
-            grid-row: 3;
-            grid-column: 2;
-            margin-top: 1rem;
-            margin-left: -6rem;
-            max-width: 460px;
-        }
-
-        .about__button {
-            margin-top: 2rem;
-            margin-right: 8rem;
-        }
-
-        .about-img-wrapper {
-            margin-left: 8rem;
-            grid-row: 2 / 5;
-            max-width: 450px;
-        }
     }
 </style>
 

@@ -23,7 +23,6 @@ import { Image } from "astro:assets";
 <style>
     .project {
         position: relative;
-        overflow: visible;
         margin-bottom: 2rem;
     }
     .project__link {
@@ -38,6 +37,7 @@ import { Image } from "astro:assets";
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .project__image {
@@ -64,10 +64,6 @@ import { Image } from "astro:assets";
         margin: 0.2rem 0 0 0;
         font-size: var(--size-ssm);
         color: var(--color-dblauw);
-    }
-
-    .project:hover .project__image {
-        transform: scale(1.05);
     }
 
     @media screen and (min-width: 48em) {
@@ -105,6 +101,10 @@ import { Image } from "astro:assets";
 
         .project__image {
             width: 100%;
+        }
+
+        .project:hover .project__image {
+            transform: scale(1.1);
         }
     }
 </style>
