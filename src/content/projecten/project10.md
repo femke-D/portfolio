@@ -56,7 +56,7 @@ The local Portal and online web app are connected through Supabase. When a visit
 " class="project__figma">Prototype mobile</a>
 
 
-![research Brandboard](../../content/projecten/img/portal/endresult.jpg)
+![research Brandboard](../../content/projecten/img/portal/endresult.JPG)
 ![research Brandboard](../../content/projecten/img/portal/booth.jpg)
 ![research Brandboard](../../content/projecten/img/portal/instalation.jpg)
 ![research Brandboard](../../content/projecten/img/portal/portal.jpg)
