@@ -132,6 +132,43 @@ import me from "../assets/me.png";
             width: 250px;
         }
     }
+
+    @media screen and (min-width: 58em) {
+        .about__text {
+            width: 450px;
+        }
+        .about__img {
+            width: 300px;
+        }
+    }
+    @media screen and (min-width: 66em) {
+        .about__text {
+            width: 450px;
+        }
+        .about__img {
+            width: 350px;
+        }
+        .about__greeting {
+            margin-top: -4rem;
+            font-size: var(--size-xxxl);
+        }
+    }
+
+    @media screen and (min-width: 78em) {
+        .about {
+            margin-bottom: 10rem;
+        }
+        .about__text {
+            width: 500px;
+        }
+        .about__intro,
+        .about__title {
+            margin-left: 8rem;
+        }
+        .about__greeting {
+            margin-left: -2rem;
+        }
+    }
 </style>
 
 <script>
