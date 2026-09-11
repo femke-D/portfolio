@@ -19,18 +19,3 @@ The goal of this project was to create a brand board and design a mobile app bas
 
 
 <iframe class="frame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4165-11578&viewport=380%2C418%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4165%3A11578&show-proto-sidebar=1&page-id=4165%3A11417&embed-host=share" allowfullscreen></iframe>
-
-![mixbox Brandboard](../../content/projecten/img/mixbox/B1.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B2.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B3.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B4.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B5.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B6.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B7.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B8.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B9.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B10.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B11.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B12.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B13.png)
-![mixbox Brandboard](../../content/projecten/img/mixbox/B14.png)

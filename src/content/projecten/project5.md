@@ -13,6 +13,7 @@ partners: "Devine , MoMu Museum"
 
  <a class= "see-button" href="https://femke-d.github.io/integration3/" class="project__figma">Visit website</a>
 
+<div class="total">
 <div class="second-text"> 
 <span class ="second-titel"> Concept </span>
 </br>
@@ -20,3 +21,4 @@ partners: "Devine , MoMu Museum"
 </div>
 
 ![dior Brandboard](../../content/projecten/img/dior/desktop1.png) 
+</div>

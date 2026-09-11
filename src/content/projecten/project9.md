@@ -14,9 +14,13 @@ For this project, we designed a working prototype for a generation spaceship, a 
 <div class= "vraag-research">
 "How might we design first independent living spaces that help young adults confidently transition to living on their own in a limited space?"
 </div>
+
+<a class= "see-button" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
+
 <a class= "see-button" href="https://www.behance.net/gallery/249094065/MARA"> Visit website</a>
 
 
+<div class ="total">
 
 
 <div class="second-text"> 
@@ -32,6 +36,6 @@ The platform combines access to shared materials with personal guidance. When a 
 </br>
 </br>
 By turning mistakes and repairs into learning opportunities, MARA helps young residents develop the skills and confidence needed to live independently within the limited space of a generation spaceship.
-</div>
-<a class= "see-button" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
 
+</div>
+</div>

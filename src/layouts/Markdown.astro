@@ -26,16 +26,20 @@ const { title, description, tools, services, screen } = Astro.props;
 
     <div class="project-body-wrapper">
         <div class="project-info">
-            <p class="project__description">
-                <strong class="word__category">Category:</strong>
-                <br />
-                {description}
-            </p>
-            <p class="project__description">
-                <strong class="word__tools">Tools:</strong>
-                <br />
-                {tools}
-            </p>
+            <div class="info-row">
+                <p class="project__description">
+                    <strong class="word__category">Category:</strong>
+                    <br />
+                    {description}
+                </p>
+
+                <p class="project__description">
+                    <strong class="word__tools">Tools:</strong>
+                    <br />
+                    {tools}
+                </p>
+            </div>
+
             <p class="project__description">
                 <strong class="word__services">Services:</strong>
                 <br />
@@ -64,34 +68,27 @@ const { title, description, tools, services, screen } = Astro.props;
             }
             {
                 title === "The portal" && (
-                    <video
-                        class="video_portal"
-                        width="60%"
-                        height="auto"
-                        controls
-                        muted
-                        playsinline
-                        preload="metadata"
-                        class="project-video"
-                    >
-                        <source src={promo} type="video/mp4" />
-                    </video>
-                )
-            }
-            {
-                title === "The portal" && (
-                    <video
-                        class="video_portal"
-                        width="60%"
-                        height="auto"
-                        controls
-                        muted
-                        playsinline
-                        preload="metadata"
-                        class="project-video"
-                    >
-                        <source src={casemovie} type="video/mp4" />
-                    </video>
+                    <div class="portal-videos">
+                        <video
+                            class="video_portal"
+                            controls
+                            muted
+                            playsinline
+                            preload="metadata"
+                        >
+                            <source src={promo} type="video/mp4" />
+                        </video>
+
+                        <video
+                            class="video_portal"
+                            controls
+                            muted
+                            playsinline
+                            preload="metadata"
+                        >
+                            <source src={casemovie} type="video/mp4" />
+                        </video>
+                    </div>
                 )
             }
         </div>
@@ -353,7 +350,7 @@ const { title, description, tools, services, screen } = Astro.props;
         :global(.second-text),
         :global(.vraag-research) {
             font-size: 20px;
-            width: 550px;
+            width: 500px;
             justify-self: center;
         }
 
@@ -381,6 +378,144 @@ const { title, description, tools, services, screen } = Astro.props;
 
         :global(.project__content img) {
             max-width: 400px;
+        }
+
+        .back-button {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 68em) {
+        .project-info {
+            margin-top: -4rem;
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 25px;
+            margin-bottom: -2.5rem;
+        }
+
+        .project__description {
+            font-size: 20px;
+            width: 450px;
+        }
+        :global(.video_gardigan),
+        :global(.video_portal) {
+            width: 60%;
+            margin-left: 15rem;
+        }
+
+        :global(.project__content img) {
+            max-width: 400px;
+        }
+
+        .back-button {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (min-width: 70em) {
+        .project-body-wrapper {
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            gap: 2rem;
+        }
+
+        .project-info {
+            margin-left: 5rem;
+            margin-top: 0;
+        }
+
+        .info-row {
+            display: block;
+        }
+
+        .project__description {
+            font-size: 20px;
+            width: 450px;
+        }
+
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            margin-left: 0;
+            max-width: 600px;
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 25px;
+        }
+
+        .project-details {
+            width: 850px;
+            margin: 8rem auto 0 auto;
+        }
+
+        :global(.total) {
+            margin-left: -80rem;
+        }
+        :global(.see-button) {
+            margin-right: 0;
+        }
+        :global(.project__content img) {
+            max-width: 300px;
+        }
+
+        .portal-videos {
+            display: flex;
+            width: 100%;
+            margin-left: -35rem;
+        }
+
+        .video_gardigan {
+            display: flex;
+            width: 100%;
+            margin-left: -15rem;
+        }
+
+        .video_portal {
+            width: 45%;
+            height: auto;
+        }
+
+        .project__image-wrapper {
+            width: 100vw;
+            height: 40vw;
+        }
+        .project__image {
+            width: 100%;
+            height: 100%;
+        }
+
+        :global(.second-text) {
+            margin: 3rem;
+        }
+        :global(.project-switch) {
+            justify-content: start;
+            margin-left: 4rem;
+        }
+        :global(.switch-btn) {
+            font-size: var(--size-ss);
+        }
+        :global(.switch-btn.active) {
+            background-color: var(--color-dblauw);
+            color: white;
+            border-color: var(--color-dblauw);
+        }
+        :global(.subtitle) {
+            margin-top: -3rem;
+            margin-left: 0;
+        }
+
+        :global(.frame) {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            margin-left: -30rem;
         }
     }
 </style>
