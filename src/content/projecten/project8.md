@@ -14,7 +14,7 @@ partners: "Devine"
     <button class="switch-btn" data-project="arduino">Arduino</button>
 </div>
 
-<div class="project-info active" id="webrtc">
+<div class="project-tab active" id="webrtc">
 
 <h2 class="subtitle">WebRTC</h2>
 
@@ -23,7 +23,7 @@ View and Influence Cities is an interactive experience in which users explore an
 <a class= "see-button" href="https://city-ilj6.onrender.com/" class="project__figma">Visit website</a>
 </div>
 
-<div class="project-info" id="arduino">
+<div class="project-tab" id="arduino">
 
 <h2 class="subtitle">Arduino</h2>
 
@@ -41,7 +41,7 @@ The physical interactions are enhanced with a servo motor, RGB LED, LEDs and a p
 
 <script>
     const switchButtons = document.querySelectorAll('.switch-btn');
-    const projectInfos = document.querySelectorAll('.project-info');
+    const projectInfos = document.querySelectorAll('.project-tab');
 
     switchButtons.forEach(button => {
         button.addEventListener('click', () => {

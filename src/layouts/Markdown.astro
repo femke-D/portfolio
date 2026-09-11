@@ -26,16 +26,20 @@ const { title, description, tools, services, screen } = Astro.props;
 
     <div class="project-body-wrapper">
         <div class="project-info">
-            <p class="project__description">
-                <strong class="word__category">Category:</strong>
-                <br />
-                {description}
-            </p>
-            <p class="project__description">
-                <strong class="word__tools">Tools:</strong>
-                <br />
-                {tools}
-            </p>
+            <div class="info-row">
+                <p class="project__description">
+                    <strong class="word__category">Category:</strong>
+                    <br />
+                    {description}
+                </p>
+
+                <p class="project__description">
+                    <strong class="word__tools">Tools:</strong>
+                    <br />
+                    {tools}
+                </p>
+            </div>
+
             <p class="project__description">
                 <strong class="word__services">Services:</strong>
                 <br />
@@ -64,34 +68,27 @@ const { title, description, tools, services, screen } = Astro.props;
             }
             {
                 title === "The portal" && (
-                    <video
-                        class="video_portal"
-                        width="60%"
-                        height="auto"
-                        controls
-                        muted
-                        playsinline
-                        preload="metadata"
-                        class="project-video"
-                    >
-                        <source src={promo} type="video/mp4" />
-                    </video>
-                )
-            }
-            {
-                title === "The portal" && (
-                    <video
-                        class="video_portal"
-                        width="60%"
-                        height="auto"
-                        controls
-                        muted
-                        playsinline
-                        preload="metadata"
-                        class="project-video"
-                    >
-                        <source src={casemovie} type="video/mp4" />
-                    </video>
+                    <div class="portal-videos">
+                        <video
+                            class="video_portal"
+                            controls
+                            muted
+                            playsinline
+                            preload="metadata"
+                        >
+                            <source src={promo} type="video/mp4" />
+                        </video>
+
+                        <video
+                            class="video_portal"
+                            controls
+                            muted
+                            playsinline
+                            preload="metadata"
+                        >
+                            <source src={casemovie} type="video/mp4" />
+                        </video>
+                    </div>
                 )
             }
         </div>
@@ -100,41 +97,19 @@ const { title, description, tools, services, screen } = Astro.props;
 
 <style>
     :global(.see-button) {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-
-    :global(.see-button::after) {
-        content: "→";
-        display: inline-block;
-        opacity: 0;
-        margin-left: 0.5rem;
-        transform: translateX(-10px);
-        transition: all 0.3s ease;
-        pointer-events: none;
-    }
-
-    :global(.see-button:hover::after) {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    :global(.see-button:hover) {
-        color: var(--color-red);
-    }
-
-    :global(.see-button) {
         color: var(--color-dblauw);
         font-size: var(--size-ssm);
     }
 
     :global(.project-switch) {
         display: flex;
-        gap: 1rem;
-        margin-left: 4rem;
-        margin-bottom: 2rem;
+        gap: 4rem;
+        justify-content: center;
+        margin-bottom: 8rem;
+    }
+
+    :global(.subtitle) {
+        font-size: var(--size-ml);
     }
 
     :global(.switch-btn) {
@@ -143,7 +118,7 @@ const { title, description, tools, services, screen } = Astro.props;
         padding: 0.5rem 1.5rem;
         cursor: pointer;
         font-family: inherit;
-        font-size: var(--size-sm);
+        font-size: var(--size-ml);
         color: var(--color-dblauw);
         text-transform: uppercase;
         transition: all 0.3s ease;
@@ -155,11 +130,21 @@ const { title, description, tools, services, screen } = Astro.props;
         border-color: var(--color-dblauw);
     }
 
+    :global(.project-tab) {
+        display: none;
+        flex-direction: column;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    :global(.project-tab.active) {
+        display: flex;
+    }
+
     .back-button {
-        align-items: center;
         color: var(--color-red);
-        text-decoration: none;
-        margin-left: 2rem;
+        margin: 6rem;
+        font-size: 40px;
     }
 
     .back-button::before {
@@ -171,16 +156,11 @@ const { title, description, tools, services, screen } = Astro.props;
 
     h1.project__title {
         margin-left: 4rem;
-        font-size: var(--size-l);
+        font-size: var(--size-xxl);
+        margin-top: -3rem;
     }
 
     .markdown-layout {
-        overflow-x: hidden;
-        width: 100%;
-        margin-top: 5rem;
-    }
-
-    .project-header {
         margin-top: 10rem;
     }
 
@@ -211,24 +191,36 @@ const { title, description, tools, services, screen } = Astro.props;
     .word__tools,
     .word__services {
         color: var(--color-red);
-        font-size: 30px;
+        font-size: 45px;
         font-weight: 200;
         display: block;
-        margin-bottom: -0.5rem;
+        margin-bottom: -4.5rem;
     }
 
     .project__description {
-        font-size: 20px;
+        font-size: 35px;
         font-weight: 300;
+        max-width: 800px;
+        line-height: 1.8;
     }
 
     :global(.project__content p),
     :global(.second-text),
     :global(.vraag-research) {
-        font-size: 20px;
+        font-size: 40px;
         font-weight: 400;
         line-height: 1.8;
-        max-width: auto;
+        max-width: 850px;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    :global(.see-button) {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 4rem;
+        font-size: 50px;
+        margin-top: 5rem;
     }
 
     :global(.vraag-research) {
@@ -238,33 +230,18 @@ const { title, description, tools, services, screen } = Astro.props;
     :global(.second-text) {
         margin-top: 6rem;
     }
+
     :global(.second-titel) {
         font-size: 45px;
         font-weight: bold;
     }
 
-    .project__content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    :global(.project__figma) {
-        padding: 1.5rem 3rem;
-        font-size: 45px;
-        transition: transform 0.3s ease;
-        color: var(--color-dblauw);
-    }
-
-    :global(.project__figma:hover) {
-        transform: scale(1.05);
-    }
-
     :global(.project__content img) {
-        max-width: 100%;
+        max-width: 600px;
         height: auto;
         display: block;
-        padding-top: 5rem;
+        padding-top: 3rem;
+        justify-self: center;
     }
 
     :global(.frame) {
@@ -284,178 +261,261 @@ const { title, description, tools, services, screen } = Astro.props;
         font-size: 45px;
     }
 
-    .video_gardigan {
+    :global(.video_gardigan),
+    :global(.video_portal) {
         align-self: center;
         width: 100%;
+        margin-top: 5rem;
+    }
+
+    :global(.project__figma) {
+        padding: 1.5rem 3rem;
+        font-size: 45px;
+        transition: transform 0.3s ease;
+        color: var(--color-dblauw);
+    }
+
+    @media screen and (min-width: 27em) {
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            font-size: 35px;
+        }
+
+        :global(.see-button) {
+            font-size: 45px;
+        }
+    }
+
+    @media screen and (min-width: 32em) {
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            font-size: 30px;
+        }
+
+        :global(.see-button) {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (min-width: 40em) {
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            font-size: 27px;
+        }
+
+        :global(.see-button) {
+            font-size: 35px;
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 40px;
+            margin-bottom: -3rem;
+        }
+
+        .project__description {
+            font-size: 30px;
+        }
     }
 
     @media screen and (min-width: 48em) {
-        /* .back-button {
-            font-size: 37px;
-            margin-left: 4rem;
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            font-size: 23px;
         }
 
-        h1.project__title {
-            margin-top: 8rem;
-            margin-left: 4rem;
-            font-size: var(--size-xl);
+        :global(.see-button) {
+            font-size: 30px;
         }
 
-        .project-info p {
-            font-size: 40px;
-            margin-top: 1.5rem;
-        }
-
-        .word_category,
+        .word__category,
         .word__tools,
         .word__services {
-            font-size: 50px;
+            font-size: 35px;
+            margin-bottom: -3rem;
         }
 
-        :global(.project__content p) {
-            margin-top: 5rem;
-            font-size: 40px;
-            margin-left: 4rem;
-            margin-right: 4rem;
-            max-width: 1000px;
-        }
-
-        :global(.project__figma) {
-            font-size: 45px;
-            padding: 1.5rem 3rem;
-            margin-right: 4rem;
-        }*/
-    }
-
-    @media screen and (min-width: 80em) {
-        /* .back-button {
+        .project__description {
             font-size: 25px;
         }
+    }
 
-        .markdown-layout {
-            max-width: 1400px;
-            margin: 0 auto;
-            margin-top: 6rem;
+    @media screen and (min-width: 57em) {
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            font-size: 20px;
+            width: 500px;
+            justify-self: center;
         }
 
-        .project-body-wrapper {
-            display: grid;
-            grid-template-columns: 400px 1fr;
-            column-gap: 2rem;
-            align-items: start;
-            padding: 0 4rem;
+        :global(.see-button) {
+            font-size: 25px;
+            margin-top: -2rem;
         }
 
-        .project__content {
-            display: contents;
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 30px;
+            margin-bottom: -3rem;
         }
 
-        :global(.project__content p) {
-            grid-column: 2;
-            font-size: var(--size-ssm);
-            max-width: 580px;
-            line-height: 1.8;
-            margin-left: 4rem;
-            margin-top: 2rem;
+        .project__description {
+            font-size: 20px;
+            width: 500px;
         }
-
-        :global(.project__content p:has(img)) {
-            grid-column: 1 / -1;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            align-items: flex-start;
-            max-width: 100%;
-            margin-top: 2rem;
-            margin-left: 0;
+        :global(.video_gardigan),
+        :global(.video_portal) {
+            width: 60%;
+            margin-left: 15rem;
         }
 
         :global(.project__content img) {
-            width: calc(50% - 1rem);
-            height: auto;
-            object-fit: contain;
-            display: block;
-            margin: 0;
+            max-width: 400px;
+        }
+
+        .back-button {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 68em) {
+        .project-info {
             margin-top: -4rem;
         }
 
-        .project-info p {
-            font-size: 20px;
-        }
-
-        .word_category,
+        .word__category,
         .word__tools,
         .word__services {
-            font-size: var(--size-mml);
+            font-size: 25px;
+            margin-bottom: -2.5rem;
+        }
+
+        .project__description {
+            font-size: 20px;
+            width: 450px;
+        }
+        :global(.video_gardigan),
+        :global(.video_portal) {
+            width: 60%;
+            margin-left: 15rem;
+        }
+
+        :global(.project__content img) {
+            max-width: 400px;
+        }
+
+        .back-button {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (min-width: 70em) {
+        .project-body-wrapper {
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            gap: 2rem;
+        }
+
+        .project-info {
+            margin-left: 5rem;
+            margin-top: 0;
+        }
+
+        .info-row {
+            display: block;
+        }
+
+        .project__description {
+            font-size: 20px;
+            width: 450px;
+        }
+
+        :global(.project__content p),
+        :global(.second-text),
+        :global(.vraag-research) {
+            margin-left: 0;
+            max-width: 600px;
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 25px;
+        }
+
+        .project-details {
+            width: 850px;
+            margin: 8rem auto 0 auto;
+        }
+
+        :global(.total) {
+            margin-left: -80rem;
+        }
+        :global(.see-button) {
+            margin-right: 0;
+        }
+        :global(.project__content img) {
+            max-width: 300px;
+        }
+
+        .portal-videos {
+            display: flex;
+            width: 100%;
+            margin-left: -35rem;
+        }
+
+        .video_gardigan {
+            display: flex;
+            width: 100%;
+            margin-left: -15rem;
+        }
+
+        .video_portal {
+            width: 45%;
+            height: auto;
         }
 
         .project__image-wrapper {
             width: 100vw;
-            height: 400px;
-            margin-left: calc(-50vw + 50%);
-            margin-top: 2rem;
-            margin-bottom: 6rem;
-            overflow: hidden;
+            height: 40vw;
         }
-
         .project__image {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-        }
-
-        :global(.frame) {
-            margin-bottom: 5rem;
-        }
-
-        :global(.see-button),
-        :global(.project__figma),
-        :global(.link),
-        :global(.visit),
-        :global(.research) {
-            grid-column: 2;
-            justify-self: end;
-            display: flex;
-            font-size: 25px;
-            margin-top: -10rem;
-            margin-right: -3rem;
-        }
-        :global(.research) {
-            margin-top: -6rem;
-        }
-
-        :global(.link) {
-            margin-top: -8rem;
-            margin-right: 0;
-        }
-
-        .video_gardigan {
-            grid-column: 1 / -1;
-            display: flex;
-            justify-self: center;
-            margin-top: 5rem;
         }
 
         :global(.second-text) {
-            grid-column: 1 / -1;
-            justify-self: center;
-            font-size: 20px;
-            line-height: 1.8;
-            width: 500px;
-            margin-top: 5rem;
+            margin: 3rem;
+        }
+        :global(.project-switch) {
+            justify-content: start;
+            margin-left: 4rem;
+        }
+        :global(.switch-btn) {
+            font-size: var(--size-ss);
+        }
+        :global(.switch-btn.active) {
+            background-color: var(--color-dblauw);
+            color: white;
+            border-color: var(--color-dblauw);
+        }
+        :global(.subtitle) {
+            margin-top: -3rem;
+            margin-left: 0;
         }
 
-        :global(.second-titel) {
-            font-size: 25px;
-            font-weight: bold;
+        :global(.frame) {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            margin-left: -30rem;
         }
-
-        :global(.vraag-research) {
-            grid-column: 1 / -1;
-            margin-top: 5rem;
-            font-weight: bold;
-            width: 500px;
-            font-size: 20px;
-        }*/
     }
 </style>
