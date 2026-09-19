@@ -96,9 +96,46 @@ const { title, description, tools, services, screen } = Astro.props;
 </div>
 
 <style>
+    .markdown-layout {
+        margin-top: 20rem;
+    }
+
+    .back-button {
+        font-size: 70px;
+        color: var(--color-red);
+        margin-left: 7rem;
+    }
+
+    .back-button::before {
+        content: "←";
+        display: inline-block;
+        margin-right: 0.6rem;
+        transition: all 0.3s ease;
+    }
+
+    .project-header {
+        width: 100%;
+    }
+
+    .project__image-wrapper {
+        width: 100%;
+        margin: 8rem 0;
+    }
+
+    .project__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project__title{
+        font-size: var(--size-xxl);
+    }
+
+    /*
     :global(.see-button) {
         color: var(--color-dblauw);
-        font-size: var(--size-ssm);
+        font-size: var(--size-sm);
     }
 
     :global(.project-switch) {
@@ -144,7 +181,7 @@ const { title, description, tools, services, screen } = Astro.props;
     .back-button {
         color: var(--color-red);
         margin: 6rem;
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .back-button::before {
@@ -517,5 +554,5 @@ const { title, description, tools, services, screen } = Astro.props;
             height: 500px;
             margin-left: -30rem;
         }
-    }
+    }*/
 </style>
