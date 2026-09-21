@@ -150,14 +150,14 @@ import header10 from "../assets/header-10.png";
     .block-skill-container {
         width: 100%;
         overflow: hidden;
-        padding: 2rem 0;
+        z-index: 10;
+        margin-top: -2rem;
     }
     .block-skill {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto auto auto;
         gap: 10px;
-        margin-top: -4rem;
         width: 100%;
     }
 
@@ -352,7 +352,7 @@ import header10 from "../assets/header-10.png";
                             scrollTrigger: {
                                 trigger: container,
                                 start: "top 99%",
-                                end: "+=600", // <--- Aangepast van 900 naar 600 voor een snellere, kortere scroll-zone
+                                end: "+=600",
                                 scrub: true,
                                 markers: false,
                                 invalidateOnRefresh: true,
