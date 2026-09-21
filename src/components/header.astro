@@ -33,14 +33,31 @@ import header10 from "../assets/header-10.png";
         <p class="header-start">I am Femke Denoo</p>
     </div>
 
-    <div class="block-skill">
-        <h1 class="header-title ux">UX / UI</h1>
-        <h1 class="header-title design">DESIGNER</h1>
-        <h1 class="header-title development">DEVELOPER</h1>
+    <div class="block-skill-container">
+        <div class="block-skill">
+            <h1 class="header-title ux">
+                <span class="inner-text">UX / UI</span>
+            </h1>
+            <h1 class="header-title design">
+                <span class="inner-text">DESIGNER</span>
+            </h1>
+            <h1 class="header-title development">
+                <span class="inner-text">DEVELOPER</span>
+            </h1>
+        </div>
     </div>
 </header>
 
 <style>
+    .inner-text {
+        display: inline-block;
+        will-change: transform;
+    }
+    .header-word {
+        display: inline-block;
+        will-change: transform;
+    }
+
     .header-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -71,6 +88,41 @@ import header10 from "../assets/header-10.png";
         text-align: center;
         align-self: start;
         margin-top: 1.5rem;
+
+        -webkit-mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 40%,
+            rgba(0, 0, 0, 0) 70%
+        );
+        mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 40%,
+            rgba(0, 0, 0, 0) 70%
+        );
+
+        -webkit-mask-size: 300% 100%;
+        mask-size: 300% 100%;
+
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+
+        animation: veegVanLinksNaarRechts 8s cubic-bezier(0.25, 1, 0.5, 1)
+            forwards;
+    }
+
+    @keyframes veegVanLinksNaarRechts {
+        0% {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+            opacity: 0;
+        }
+        100% {
+            -webkit-mask-position: 0% 0;
+            mask-position: 0% 0;
+            opacity: 1;
+        }
     }
 
     .header__img-container {
@@ -95,6 +147,11 @@ import header10 from "../assets/header-10.png";
         opacity: 1;
     }
 
+    .block-skill-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 2rem 0;
+    }
     .block-skill {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -250,27 +307,88 @@ import header10 from "../assets/header-10.png";
 </style>
 
 <script>
-    const $images = document.querySelectorAll(".header-img");
-    let currentIndex = 0;
-    const intervalTime = 3000;
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-    $images.length && ($images[0].style.opacity = "1");
+    gsap.registerPlugin(ScrollTrigger);
 
-    const nextImage = () => {
-        gsap.to($images[currentIndex], {
-            opacity: 0,
-            duration: 0.8,
-            ease: "power2.inOut",
+    function initHeaderScripts() {
+        const $images = document.querySelectorAll(".header-img");
+        let currentIndex = 0;
+
+        if ($images.length > 0) {
+            ($images[0] as HTMLElement).style.opacity = "1";
+        }
+
+        const imageSliderInterval = setInterval(() => {
+            gsap.to($images[currentIndex], { opacity: 0, duration: 0.8 });
+            currentIndex = (currentIndex + 1) % $images.length;
+            gsap.to($images[currentIndex], { opacity: 1, duration: 0.8 });
+        }, 3000);
+
+        let ctx = gsap.context(() => {
+            const container = document.querySelector(".block-skill-container");
+            const uxSpan = document.querySelector(".ux .inner-text");
+            const designSpan = document.querySelector(".design .inner-text");
+            const devSpan = document.querySelector(".development .inner-text");
+
+            if (container && uxSpan && designSpan && devSpan) {
+                let mm = gsap.matchMedia();
+
+                mm.add(
+                    {
+                        isDesktop: "(min-width: 48em)",
+                        isMobile: "(max-width: 47.99em)",
+                    },
+                    (context) => {
+                        let { isDesktop } = context.conditions!;
+
+                        const designEnd = isDesktop ? 260 : 40;
+                        const devEnd = isDesktop ? 600 : 120;
+
+                        const fullWidth = window.innerWidth;
+
+                        const tl = gsap.timeline({
+                            scrollTrigger: {
+                                trigger: container,
+                                start: "top 99%",
+                                end: "+=600", // <--- Aangepast van 900 naar 600 voor een snellere, kortere scroll-zone
+                                scrub: true,
+                                markers: false,
+                                invalidateOnRefresh: true,
+                            },
+                        });
+
+                        tl.fromTo(
+                            uxSpan,
+                            { x: fullWidth },
+                            { x: 0, duration: 1, ease: "none" },
+                        )
+                            // Aangepast: start nu al op 0.3 en 0.6 in plaats van 0.5 en 1.0, zodat ze elkaar sneller opvolgen
+                            .fromTo(
+                                designSpan,
+                                { x: fullWidth },
+                                { x: designEnd, duration: 1, ease: "none" },
+                                0.3,
+                            )
+                            .fromTo(
+                                devSpan,
+                                { x: fullWidth },
+                                { x: devEnd, duration: 1, ease: "none" },
+                                0.6,
+                            );
+                    },
+                );
+            }
         });
+    }
 
-        currentIndex = (currentIndex + 1) % $images.length;
+    if (
+        document.readyState === "complete" ||
+        document.readyState === "interactive"
+    ) {
+        initHeaderScripts();
+    }
 
-        gsap.to($images[currentIndex], {
-            opacity: 1,
-            duration: 0.8,
-            ease: "power2.inOut",
-        });
-    };
-
-    setInterval(nextImage, intervalTime);
+    document.addEventListener("astro:page-load", initHeaderScripts);
 </script>
