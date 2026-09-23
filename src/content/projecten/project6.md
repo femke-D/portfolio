@@ -16,9 +16,9 @@ For this assignment, we investigated how daily routines unfold within families. 
 <div class= "vraag-research">
 How does the way parents coordinate their daily schedules affect the structure of the family, and what happens when there are no routines?
 </div>
-</div>
 
 <div class= "see-buttons">
 <a class= "see-button" href="https://www.figma.com/proto/3Cs1oElNMu3MG5AYI0Hpqu/design-exp?node-id=1025-122&viewport=-1782%2C-346%2C0.39&t=X0Zw125MrAxv6chG-1&scaling=min-zoom&content-scaling=fixed&page-id=1025%3A100
 " class="project__figma">Research file</a>
+</div>
 </div>

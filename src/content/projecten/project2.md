@@ -9,6 +9,7 @@ services: "App Design, branding"
 screen: img/mixbox/startscherm.png
 partners: "Devine"
 ---
+<div class="part-intro"> 
 <p class="intro"> 
 MixBox is a cocktail subscription that provides fresh ingredients and recipes to make easy, bar-quality cocktails at home. It targets eco-conscious establishments that want to enjoy themselves in a sustainable, environmentally friendly way.
 </br>
@@ -21,5 +22,7 @@ The goal of this project was to create a brand board and design a mobile app bas
 </br>
 <a class= "see-button" href="https://www.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4165-11578&viewport=380%2C418%2C0.37&t=b7LDF0recaG5H4GA-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4165%3A11578&show-proto-sidebar=1&page-id=4165%3A11417" class="project__figma">Protype file</a>
 </div>
+</div>
+
 
 <iframe class="frame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="900" src="https://embed.figma.com/proto/5h7oz3yajpyXZPvMKxtAY3/MixBox?node-id=4165-11578&p=f&viewport=575%2C28%2C0.35&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4434%3A6120&show-proto-sidebar=1&page-id=4165%3A11417&embed-host=share" allowfullscreen></iframe>

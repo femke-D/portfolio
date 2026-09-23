@@ -9,6 +9,7 @@ services: "Concept Development, UX/UI Design, Web Development & Responsive Desig
 screen: img/dior/startscherm.png
 partners: "Devine , MoMu Museum"
 ---
+<div class="part-intro"> 
 <p class="intro"> 
  The Dior assignment, I am working around the Fashion Museum Antwerp (MoMu), where fashion is viewed as more than just clothing, but as a way to showcase stories and culture. I visit the museum and draw inspiration from the collection and exhibitions. Using these insights, I create a creative output aimed at an adult audience.
 </p>
@@ -16,6 +17,8 @@ partners: "Devine , MoMu Museum"
 <div class= "see-buttons">
 <a class= "see-button" href="https://femke-d.github.io/integration3/" class="project__figma">Visit website</a>
 </div>
+</div>
+
 
 <div class="total">
 <span class ="second-titel"> Concept </span>

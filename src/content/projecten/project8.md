@@ -9,6 +9,8 @@ services: "Concept Development, Web Development, WebRTC, Arduino, Rotary Encoder
 screen: img/city/startscherm.png
 partners: "Devine"
 ---
+<div class="project-intro">
+
 <div class="project-switch">
     <button class="switch-btn active" data-project="webrtc">WebRTC</button>
     <button class="switch-btn" data-project="arduino">Arduino</button>
@@ -20,10 +22,10 @@ partners: "Devine"
 <p class="intro"> 
 View and Influence Cities is an interactive experience in which users explore and transform a digital city. Movements and sound influence the city: tilting changes style or zoom, shaking distorts buildings, swiping and camera touch control day/night, and the microphone adjusts the crowding based on ambient sound.
 </p>
-</div>
 
 <div class= "see-buttons">
 <a class= "see-button" href="https://city-ilj6.onrender.com/" class="project__figma">Visit website</a>
+</div>
 </div>
 
 </div>
@@ -41,6 +43,7 @@ A rotary encoder controls the zoom in and out of the city, while a VL53L0X dista
 </br>
 The physical interactions are enhanced with a servo motor, RGB LED, LEDs and a passive buzzer, providing visual, audio and physical feedback. This extension combines the existing digital experience with physical interaction to create a more immersive way of exploring the cities.
 </p>
+</div>
 </div>
 </div>
 

@@ -17,12 +17,12 @@ For this project, we designed a working prototype for a generation spaceship, a 
 <div class= "vraag-research">
 "How might we design first independent living spaces that help young adults confidently transition to living on their own in a limited space?"
 </div>
-</div>
 
 <div class= "see-buttons">
 <a class= "see-button" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
 </br>
 <a class= "see-button" href="https://www.behance.net/gallery/249094065/MARA"> Visit website</a>
+</div>
 </div>
 
 <div class ="total">

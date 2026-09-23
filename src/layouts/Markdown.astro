@@ -291,7 +291,6 @@ const { title, description, tools, services, screen } = Astro.props;
             font-size: 40px;
         }
 
-
         .project__content :global(.second-text) {
             font-size: 30px;
         }
@@ -299,255 +298,339 @@ const { title, description, tools, services, screen } = Astro.props;
         :global(.project__content img) {
             width: 70%;
         }
-        
+
         .project__content :global(.switch-btn) {
             font-size: 40px;
         }
+        .video_gardigan {
+            justify-self: center;
+        }
     }
 
-    /* 
-
-    @media screen and (min-width: 27em) {
-        :global(.project__content p),
-        :global(.second-text),
-        :global(.vraag-research) {
+    @media screen and (min-width: 41em) {
+        .back-button {
             font-size: 35px;
         }
 
-        :global(.see-button) {
-            font-size: 45px;
-        }
-    }
-
-    @media screen and (min-width: 32em) {
-        :global(.project__content p),
-        :global(.second-text),
-        :global(.vraag-research) {
-            font-size: 30px;
-        }
-
-        :global(.see-button) {
-            font-size: 40px;
-        }
-    }
-
-    @media screen and (min-width: 40em) {
-        :global(.project__content p),
-        :global(.second-text),
-        :global(.vraag-research) {
-            font-size: 27px;
-        }
-
-        :global(.see-button) {
-            font-size: 35px;
-        }
-
-        .word__category,
-        .word__tools,
-        .word__services {
-            font-size: 40px;
-            margin-bottom: -3rem;
-        }
-
-        .project__description {
-            font-size: 30px;
-        }
-    }
-
-    @media screen and (min-width: 48em) {
-        :global(.project__content p),
-        :global(.second-text),
-        :global(.vraag-research) {
-            font-size: 23px;
-        }
-
-        :global(.see-button) {
-            font-size: 30px;
+        .project__title {
+            font-size: var(--size-xl);
         }
 
         .word__category,
         .word__tools,
         .word__services {
             font-size: 35px;
-            margin-bottom: -3rem;
         }
 
         .project__description {
             font-size: 25px;
+            width: 550px;
         }
-    }
 
-    @media screen and (min-width: 57em) {
-        :global(.project__content p),
-        :global(.second-text),
-        :global(.vraag-research) {
-            font-size: 20px;
-            width: 500px;
+        .project__content :global(.intro) {
+            font-size: 25px;
+            width: 700px;
             justify-self: center;
         }
 
-        :global(.see-button) {
-            font-size: 25px;
-            margin-top: -2rem;
-        }
-
-        .word__category,
-        .word__tools,
-        .word__services {
+        .project__content :global(.vraag-research) {
             font-size: 30px;
-            margin-bottom: -3rem;
+            width: 700px;
+            justify-self: center;
         }
 
-        .project__description {
-            font-size: 20px;
-            width: 500px;
+        .project__content :global(.see-button) {
+            font-size: 35px;
         }
-        :global(.video_gardigan),
-        :global(.video_portal) {
-            width: 60%;
-            margin-left: 15rem;
+
+        .project__content :global(.second-titel) {
+            margin-left: 9rem;
+            font-size: var(--size-l);
+        }
+
+        .project__content :global(.second-text) {
+            font-size: 25px;
+            width: 720px;
+            justify-self: center;
         }
 
         :global(.project__content img) {
-            max-width: 400px;
+            width: 70%;
         }
 
-        .back-button {
+        .project__content :global(.switch-btn) {
             font-size: 30px;
         }
-    }
 
-    @media screen and (min-width: 68em) {
-        .project-info {
-            margin-top: -4rem;
-        }
-
-        .word__category,
-        .word__tools,
-        .word__services {
-            font-size: 25px;
-            margin-bottom: -2.5rem;
-        }
-
-        .project__description {
-            font-size: 20px;
-            width: 450px;
-        }
-        :global(.video_gardigan),
-        :global(.video_portal) {
-            width: 60%;
-            margin-left: 15rem;
-        }
-
-        :global(.project__content img) {
-            max-width: 400px;
-        }
-
-        .back-button {
-            font-size: 25px;
-        }
-    }
-
-    @media screen and (min-width: 70em) {
-        .project-body-wrapper {
-            display: grid;
-            grid-template-columns: 450px 1fr;
-            gap: 2rem;
-        }
-
-        .project-info {
-            margin-left: 5rem;
-            margin-top: 0;
-        }
-
-        .info-row {
-            display: block;
-        }
-
-        .project__description {
-            font-size: 20px;
-            width: 450px;
-        }
-
-        :global(.project__content p),
-        :global(.second-text),
-        :global(.vraag-research) {
-            margin-left: 0;
-            max-width: 600px;
-        }
-
-        .word__category,
-        .word__tools,
-        .word__services {
-            font-size: 25px;
-        }
-
-        .project-details {
-            width: 850px;
-            margin: 8rem auto 0 auto;
-        }
-
-        :global(.total) {
-            margin-left: -80rem;
-        }
-        :global(.see-button) {
-            margin-right: 0;
-        }
-        :global(.project__content img) {
-            max-width: 300px;
+        .video_gardigan,
+        .video_portal {
+            width: 80%;
         }
 
         .portal-videos {
             display: flex;
-            width: 100%;
-            margin-left: -35rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width: 53em) {
+        .markdown-layout {
+            margin-top: 4rem;
         }
 
-        .video_gardigan {
-            display: flex;
-            width: 100%;
-            margin-left: -15rem;
+        .back-button {
+            font-size: 25px;
         }
 
+        .project__title {
+            font-size: var(--size-l);
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 30px;
+        }
+
+        .project__description {
+            font-size: 20px;
+            width: 500px;
+        }
+
+        .project__content :global(.intro) {
+            font-size: 20px;
+            width: 600px;
+        }
+
+        .project__content :global(.vraag-research) {
+            font-size: 25px;
+            width: 600px;
+        }
+
+        .project__content :global(.see-button) {
+            font-size: 30px;
+            margin-right: 5rem;
+        }
+
+        .project__content :global(.second-titel) {
+            margin-left: 11rem;
+            font-size: var(--size-ml);
+        }
+
+        .project__content :global(.second-text) {
+            font-size: 20px;
+            width: 650px;
+            justify-self: center;
+        }
+
+        :global(.project__content img) {
+            width: 60%;
+        }
+
+        .project__content :global(.switch-btn) {
+            font-size: 25px;
+            margin-bottom: -4rem;
+        }
+
+        .video_gardigan,
         .video_portal {
-            width: 45%;
-            height: auto;
+            width: 60%;
+        }
+    }
+
+    @media screen and (min-width: 64em) {
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 25px;
         }
 
-        .project__image-wrapper {
-            width: 100vw;
-            height: 40vw;
-        }
-        .project__image {
-            width: 100%;
-            height: 100%;
+        .project__description {
+            font-size: 18px;
+            width: 350px;
         }
 
-        :global(.second-text) {
-            margin: 3rem;
+        .project__content :global(.intro) {
+            font-size: 18px;
+            width: 550px;
         }
-        :global(.project-switch) {
-            justify-content: start;
-            margin-left: 4rem;
+
+        .project__content :global(.vraag-research) {
+            font-size: 20px;
+            width: 550px;
         }
-        :global(.switch-btn) {
-            font-size: var(--size-ss);
+
+        .project__content :global(.see-button) {
+            font-size: 25px;
         }
-        :global(.switch-btn.active) {
-            background-color: var(--color-dblauw);
-            color: white;
-            border-color: var(--color-dblauw);
+
+        .project__content :global(.second-titel) {
+            margin-left: 14rem;
+            font-size: var(--size-ml);
         }
-        :global(.subtitle) {
-            margin-top: -3rem;
+
+        .project__content :global(.second-text) {
+            font-size: 18px;
+            width: 600px;
+            justify-self: center;
+        }
+
+        :global(.project__content img) {
+            width: 55%;
+        }
+
+        .project__content :global(.switch-btn) {
+            font-size: 20px;
+            margin-bottom: -4rem;
+        }
+
+        .video_gardigan,
+        .video_portal {
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: 66em) {
+        .project-body-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .project-info {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .project__content {
+            display: contents;
+        }
+
+        .project__content :global(.project-intro) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .project__content :global(.total) {
+            grid-column: 1 / -1;
+            grid-row: 2;
+        }
+
+        .total,
+        .portal-videos,
+        .video_gardigan {
+            grid-column: 1 / -1;
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 25px;
+        }
+
+        .project__description {
+            font-size: 18px;
+            width: 350px;
+        }
+
+        .project__content :global(.intro) {
+            font-size: 18px;
+            width: 450px;
             margin-left: 0;
         }
 
-        :global(.frame) {
-            width: 100%;
-            max-width: 800px;
-            height: 500px;
-            margin-left: -30rem;
+        .project__content :global(.vraag-research) {
+            font-size: 20px;
+            width: 450px;
+            margin-left: 0;
         }
-    }*/
+
+        .project__content :global(.see-button) {
+            font-size: 25px;
+        }
+
+        .project__content :global(.second-titel) {
+            margin-left: 16rem;
+            font-size: var(--size-ml);
+        }
+
+        .project__content :global(.second-text) {
+            font-size: 18px;
+            width: 600px;
+            justify-self: center;
+        }
+
+        :global(.project__content img) {
+            width: 60%;
+        }
+
+        .project__content :global(.switch-btn) {
+            font-size: 20px;
+        }
+
+        .video_gardigan,
+        .video_portal {
+            width: 50%;
+        }
+
+        .project__content :global(.subtitle) {
+            margin-left: 0;
+            margin-bottom: -0.5rem;
+        }
+        .project__content :global(.project-tab) {
+            margin-top: -1rem;
+        }
+    }
+
+    @media screen and (min-width: 70em) {
+        .project__description {
+            width: 450px;
+        }
+
+        .project__content :global(.intro) {
+            width: 550px;
+            margin-left: -8rem;
+        }
+
+        .project__content :global(.vraag-research) {
+            width: 550px;
+            margin-left: -8rem;
+        }
+
+        .project__content :global(.second-titel) {
+            margin-left: 28rem;
+            font-size: var(--size-ml);
+        }
+        .project__content :global(.total) {
+            margin-top: -4rem;
+        }
+
+        .project__content :global(.second-text) {
+            font-size: 18px;
+            width: 600px;
+            justify-self: center;
+        }
+
+        :global(.project__content img) {
+            width: 60%;
+        }
+
+        .project__content :global(.switch-btn) {
+            font-size: 20px;
+            margin-bottom: -4rem;
+        }
+
+        .video_gardigan,
+        .video_portal {
+            width: 50%;
+        }
+
+        .project__content :global(.subtitle) {
+            margin-left: -1rem;
+            margin-bottom: -0.5rem;
+        }
+        .project__content :global(.project-tab) {
+            margin-top: -1rem;
+        }
+    }
 </style>

@@ -23,14 +23,14 @@ Our design challenge became:
 <div class= "vraag-research">
 How might we help Zillennials experience Antwerp through their own identity (flavour and style), using local communities and flexible discovery to reveal the taste of the city beyond the tourist perspective?
 </div>
-</div>
+
 
 <div class= "see-buttons">
 <a class= "see-button" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">Visit UX-website</a>
 </br>
 <a class= "see-button" href="https://github.com/MargotRopcke/integration4" class="project__figma">Visit github file</a>
 </div>
-
+</div>
 
 <div class ="total">
 <span class ="second-titel"> Concept </span>
@@ -63,7 +63,7 @@ For people who have not visited Antwerp yet, an online campaign creates curiosit
 
 
 
-<span class ="second-titel"> Local & Online Connection </span>
+<div class ="second-titel"> Local & Online Connection </div>
 <div class="second-text"> 
 </br>
 The Portal runs locally on the installation screen, allowing the interactive experience and printing process to work directly on the device. The web app, however, is deployed online through GitHub Pages, so users can access their personalised results on their phone.

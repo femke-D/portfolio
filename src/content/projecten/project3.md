@@ -9,6 +9,7 @@ services: "Concept Development, Web Development, UX, UI & Web Design"
 screen: img/respiro/startscherm.png
 partners: "Devine"
 ---
+<div class="part-intro"> 
 <p class="intro"> 
 The assignment is to choose an everyday object and give it three alternative uses within one clear concept. The website uses storytelling to introduce the concept and presents the three new uses, together with a challenge or event and testimonials.
 </p>
@@ -18,6 +19,7 @@ The assignment is to choose an everyday object and give it three alternative use
 </br>
 <a class= "see-button" href="https://www.figma.com/board/Qgu3dCaIIdWy9iEvMhteUS/integration-2-DF?node-id=0-1&t=B8ivZ99QxeEoaZxr-1
 " class="project__figma"> Progress file</a>
+</div>
 </div>
 
 <div class="total">

@@ -61,7 +61,7 @@ import header10 from "../assets/header-10.png";
     .header-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto;
         align-items: center;
         justify-items: center;
         margin-top: 2rem;
@@ -151,7 +151,7 @@ import header10 from "../assets/header-10.png";
         width: 100%;
         overflow: hidden;
         z-index: 10;
-        margin-top: -2rem;
+        margin-top: 0;
     }
     .block-skill {
         display: grid;
@@ -195,18 +195,14 @@ import header10 from "../assets/header-10.png";
         .header-start {
             margin-top: 1rem;
         }
-        .block-skill {
-            margin-top: -2rem;
-        }
+       
     }
 
     @media screen and (min-width: 34em) {
         .header-start {
             font-size: var(--size-xxl);
         }
-        .block-skill {
-            margin-top: 2rem;
-        }
+        
     }
     @media screen and (min-width: 39em) {
         .header-start {
@@ -230,14 +226,12 @@ import header10 from "../assets/header-10.png";
             width: 45%;
         }
         .block-skill {
-            margin-top: -2rem;
+            margin-top: 0;
         }
     }
 
     @media screen and (min-width: 56em) {
-        .block-skill {
-            margin-top: 2rem;
-        }
+      
         .header-start {
             font-size: var(--size-xxl);
             grid-column: 1 / -1;
@@ -262,9 +256,7 @@ import header10 from "../assets/header-10.png";
     }
 
     @media screen and (min-width: 63em) {
-        .block-skill {
-            margin-top: 2rem;
-        }
+      
         .header-start {
             font-size: var(--size-xxxl);
             grid-column: 1 / -1;
@@ -277,9 +269,6 @@ import header10 from "../assets/header-10.png";
         }
     }
     @media screen and (min-width: 90em) {
-        .block-skill {
-            margin-top: 2rem;
-        }
         .header-start {
             margin-top: 4rem;
             font-size: var(--size-xxxl);
@@ -294,7 +283,6 @@ import header10 from "../assets/header-10.png";
             height: 600px;
         }
         .block-skill {
-            margin-top: -2rem;
             gap: 1.5rem;
         }
         .header-title {
@@ -364,7 +352,6 @@ import header10 from "../assets/header-10.png";
                             { x: fullWidth },
                             { x: 0, duration: 1, ease: "none" },
                         )
-                            // Aangepast: start nu al op 0.3 en 0.6 in plaats van 0.5 en 1.0, zodat ze elkaar sneller opvolgen
                             .fromTo(
                                 designSpan,
                                 { x: fullWidth },
