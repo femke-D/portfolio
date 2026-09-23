@@ -9,22 +9,25 @@ services: "User Research, Interviews, Ideation, Prototyping, Usability Testing, 
 screen: img/mara/startscherm.png
 partners: "Devine"
 ---
+<div class="project-intro">
+<p class="intro"> 
 For this project, we designed a working prototype for a generation spaceship, a spacecraft where multiple generations of people live together during an interstellar journey. Our team selected the Housing Structure theme and focused on the following design challenge:
+</p>
 
 <div class= "vraag-research">
 "How might we design first independent living spaces that help young adults confidently transition to living on their own in a limited space?"
 </div>
 
+<div class= "see-buttons">
 <a class= "see-button" href="https://www.figma.com/proto/i3ceQRSLRrVbXXBGC7YjQ9/UX4---DESIGN?node-id=863-2557&viewport=338%2C172%2C0.05&t=TA8Ic17eIgAMYfua-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=863%3A2557&page-id=863%3A1774" class="project__figma">Our prototype</a>
-
+</br>
 <a class= "see-button" href="https://www.behance.net/gallery/249094065/MARA"> Visit website</a>
-
+</div>
+</div>
 
 <div class ="total">
-
-
-<div class="second-text"> 
 <span class ="second-titel"> Concept </span>
+<div class="second-text"> 
 </br>
 MARA (Material Access & Repair Assistant) is designed to help young adults make the transition to independent living on a generation spaceship. Because residents grow up in a highly controlled environment with limited space and shared resources, learning practical life skills and taking responsibility for their own living space becomes an important part of becoming independent.
 </br>
@@ -36,6 +39,5 @@ The platform combines access to shared materials with personal guidance. When a 
 </br>
 </br>
 By turning mistakes and repairs into learning opportunities, MARA helps young residents develop the skills and confidence needed to live independently within the limited space of a generation spaceship.
-
 </div>
 </div>
