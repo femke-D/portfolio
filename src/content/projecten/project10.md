@@ -9,32 +9,32 @@ services: "UX/UI Design, React Development, Supabase Database Integration, Map I
 screen: img/portal/startscherm.png
 partners: "Devine , Visit Antwerp"
 ---
+<div class="project-intro">
+<p class="intro">
 For this project, we collaborated with Visit Antwerp to create a digital-first experience that encourages young urban travellers (18 to 36 years old) to choose Antwerp as their next city trip destination.
-
+</br>
+</br>
 The challenge was to move away from traditional city marketing and create an authentic, personal experience that connects with the mindset of Millennials. The goal was to show Antwerp beyond its well-known landmarks by focusing on hidden experiences, local communities, and personal interests.
-
+</br>
+</br>
 Our design challenge became:
+</p>
 
 <div class= "vraag-research">
 How might we help Zillennials experience Antwerp through their own identity (flavour and style), using local communities and flexible discovery to reveal the taste of the city beyond the tourist perspective?
 </div>
+</div>
 
+<div class= "see-buttons">
 <a class= "see-button" href="https://www.behance.net/gallery/251194535/The-Portal" class="project__figma">Visit UX-website</a>
-
-
+</br>
 <a class= "see-button" href="https://github.com/MargotRopcke/integration4" class="project__figma">Visit github file</a>
-
-<a class= "see-button" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-20141&viewport=499%2C368%2C0.04&t=UeoJEOEeBzdYL8MM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A20141&show-proto-sidebar=1&page-id=5041%3A18339
-" class="project__figma">Prototype The Portal</a>
-
-<a class= "see-button" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-18924&viewport=-1063%2C147%2C0.11&t=f9EyIhTgyxXCpzYE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A18924&show-proto-sidebar=1&page-id=5041%3A18339
-" class="project__figma">Prototype mobile</a>
+</div>
 
 
 <div class ="total">
-
-<div class="second-text"> 
 <span class ="second-titel"> Concept </span>
+<div class="second-text"> 
 </br>
 "One step and you enter your version of Antwerp."
 </br>
@@ -53,10 +53,18 @@ Rather than providing an exhaustive list of recommendations, The Portal offers a
 For people who have not visited Antwerp yet, an online campaign creates curiosity around The Portal and the hidden side of the city, encouraging them to plan their next visit.
 </div>
 
+<div class= "see-buttons">
+<a class= "see-button" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-20141&viewport=499%2C368%2C0.04&t=UeoJEOEeBzdYL8MM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A20141&show-proto-sidebar=1&page-id=5041%3A18339
+" class="project__figma">Prototype The Portal</a>
+</br>
+<a class= "see-button" href="https://www.figma.com/proto/mpJdmvMZZ3YsKBAPYG6O1x/INT4?node-id=5041-18924&viewport=-1063%2C147%2C0.11&t=f9EyIhTgyxXCpzYE-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5041%3A18924&show-proto-sidebar=1&page-id=5041%3A18339
+" class="project__figma">Prototype mobile</a>
+</div>
 
 
-<div class="second-text"> 
+
 <span class ="second-titel"> Local & Online Connection </span>
+<div class="second-text"> 
 </br>
 The Portal runs locally on the installation screen, allowing the interactive experience and printing process to work directly on the device. The web app, however, is deployed online through GitHub Pages, so users can access their personalised results on their phone.
 </br>

@@ -96,14 +96,14 @@ const { title, description, tools, services, screen } = Astro.props;
 </div>
 
 <style>
-    /*.markdown-layout {
-        margin-top: 20rem;
+    .markdown-layout {
+        margin-top: 15rem;
     }
 
     .back-button {
-        font-size: 70px;
+        font-size: 50px;
         color: var(--color-red);
-        margin-left: 7rem;
+        margin-left: 5rem;
     }
 
     .back-button::before {
@@ -128,28 +128,101 @@ const { title, description, tools, services, screen } = Astro.props;
         display: block;
     }
 
-    .project__title{
+    .project__title {
         font-size: var(--size-xxl);
-    }*/
-
-    
-    :global(.see-button) {
-        color: var(--color-dblauw);
-        font-size: var(--size-sm);
     }
 
-    :global(.project-switch) {
+    .word__category,
+    .word__tools,
+    .word__services {
+        font-size: var(--size-ml);
+        font-weight: 400;
+        color: var(--color-red);
+    }
+
+    .project__description {
+        font-size: 35px;
+        margin-bottom: 4rem;
+        width: 750px;
+    }
+
+    .project-info {
+        margin-left: 4rem;
+    }
+
+    .video_gardigan,
+    .video_portal {
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    .project__content {
+        margin-top: 10rem;
+    }
+
+    .project__content :global(.intro) {
+        font-size: 38px;
+        margin-left: 4rem;
+        width: 750px;
+    }
+
+    .project__content :global(.vraag-research) {
+        font-size: 38px;
+        font-weight: bold;
+        margin-left: 4rem;
+        width: 800px;
+        margin-bottom: 7rem;
+    }
+
+    .project__content :global(.see-buttons) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        gap: 1.5rem;
+    }
+    .project__content :global(.see-button) {
+        display: block;
+        font-size: 45px;
+        color: var(--color-dblauw);
+    }
+
+    .project__content :global(.second-titel) {
+        font-size: 80px;
+        color: var(--color-dblauw);
+        font-family: var(--font-header);
+        margin-left: 4rem;
+        margin-top: 10rem;
+    }
+
+    .project__content :global(.second-text) {
+        font-size: 38px;
+        margin-left: 4rem;
+        width: 850px;
+    }
+
+    :global(.project__content img) {
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-self: center;
+        margin-top: 3rem;
+    }
+    :global(.frame) {
+        display: block;
+        justify-self: center;
+    }
+
+    .project__content :global(.project-switch) {
         display: flex;
         gap: 4rem;
         justify-content: center;
         margin-bottom: 8rem;
     }
-
-    :global(.subtitle) {
-        font-size: var(--size-ml);
-    }
-
-    :global(.switch-btn) {
+    .project__content :global(.switch-btn) {
         background: none;
         border: 2px solid var(--color-dblauw);
         padding: 0.5rem 1.5rem;
@@ -161,156 +234,78 @@ const { title, description, tools, services, screen } = Astro.props;
         transition: all 0.3s ease;
     }
 
-    :global(.switch-btn.active) {
+    .project__content :global(.switch-btn.active) {
         background-color: var(--color-dblauw);
         color: white;
         border-color: var(--color-dblauw);
     }
 
-    :global(.project-tab) {
+    .project__content :global(.project-tab) {
         display: none;
         flex-direction: column;
         margin-left: 4rem;
         margin-bottom: 4rem;
     }
 
-    :global(.project-tab.active) {
-        display: flex;
-    }
-
-    .back-button {
-        color: var(--color-red);
-        margin: 6rem;
-        font-size: 45px;
-    }
-
-    .back-button::before {
-        content: "←";
-        display: inline-block;
-        margin-right: 0.6rem;
-        transition: all 0.3s ease;
-    }
-
-    h1.project__title {
-        margin-left: 4rem;
-        font-size: var(--size-xxl);
-        margin-top: -3rem;
-    }
-
-    .markdown-layout {
-        margin-top: 10rem;
-    }
-
-    .project__image-wrapper {
-        width: 100vw;
-        margin: 8rem 0;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .project__image {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .project-info {
-        display: flex;
-        flex-direction: column;
-        margin-left: 4rem;
-        margin-bottom: 4rem;
-    }
-
-    .word__category,
-    .word__tools,
-    .word__services {
-        color: var(--color-red);
-        font-size: 45px;
-        font-weight: 200;
+    .project__content :global(.project-tab.active) {
         display: block;
-        margin-bottom: -4.5rem;
     }
 
-    .project__description {
-        font-size: 35px;
-        font-weight: 300;
-        max-width: 800px;
-        line-height: 1.8;
+    @media screen and (min-width: 32em) {
+        .back-button {
+            font-size: 40px;
+        }
+
+        .project__title {
+            font-size: var(--size-xl);
+        }
+
+        .word__category,
+        .word__tools,
+        .word__services {
+            font-size: 40px;
+        }
+
+        .project__description {
+            font-size: 30px;
+        }
+
+        .project__content {
+            margin-top: 10rem;
+        }
+
+        .project__content :global(.intro) {
+            font-size: 30px;
+            width: 800px;
+        }
+
+        .project__content :global(.vraag-research) {
+            font-size: 32px;
+        }
+
+        .project__content :global(.see-buttons) {
+            margin-bottom: 10rem;
+            gap: 1rem;
+        }
+        .project__content :global(.see-button) {
+            font-size: 40px;
+        }
+
+
+        .project__content :global(.second-text) {
+            font-size: 30px;
+        }
+
+        :global(.project__content img) {
+            width: 70%;
+        }
+        
+        .project__content :global(.switch-btn) {
+            font-size: 40px;
+        }
     }
 
-    :global(.project__content p),
-    :global(.second-text),
-    :global(.vraag-research) {
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 1.8;
-        max-width: 850px;
-        margin-left: 4rem;
-        margin-bottom: 4rem;
-    }
-
-    :global(.see-button) {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 4rem;
-        font-size: 50px;
-        margin-top: 5rem;
-    }
-
-    :global(.vraag-research) {
-        font-weight: bold;
-    }
-
-    :global(.second-text) {
-        margin-top: 6rem;
-    }
-
-    :global(.second-titel) {
-        font-size: 45px;
-        font-weight: bold;
-    }
-
-    :global(.project__content img) {
-        max-width: 600px;
-        height: auto;
-        display: block;
-        padding-top: 3rem;
-        justify-self: center;
-    }
-
-    :global(.frame) {
-        grid-column: 1 / -1;
-        justify-self: center;
-
-        width: 100%;
-        max-width: 1000px;
-        height: 600px;
-        margin-top: 8rem;
-        display: block;
-        border-radius: 20px;
-    }
-
-    :global(.link) {
-        margin-right: 8rem;
-        font-size: 45px;
-    }
-
-    :global(.video_gardigan),
-    :global(.video_portal) {
-        align-self: center;
-        width: 100%;
-        margin-top: 5rem;
-    }
-
-    :global(.project__figma) {
-        padding: 1.5rem 3rem;
-        font-size: 45px;
-        transition: transform 0.3s ease;
-        color: var(--color-dblauw);
-    }
+    /* 
 
     @media screen and (min-width: 27em) {
         :global(.project__content p),
@@ -554,5 +549,5 @@ const { title, description, tools, services, screen } = Astro.props;
             height: 500px;
             margin-left: -30rem;
         }
-    }
+    }*/
 </style>
