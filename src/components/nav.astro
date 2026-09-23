@@ -121,6 +121,9 @@ import logo from "../assets/logo.svg";
     }
 
     @media screen and (min-width: 48em) {
+        body {
+            padding-top: 120px;
+        }
         .nav {
             display: flex;
             justify-content: space-between;
@@ -176,7 +179,7 @@ import logo from "../assets/logo.svg";
     const $navIcon = document.querySelector(".nav__icon");
     const $navClose = document.querySelector(".nav__close");
 
-    const isMobile = () => window.innerWidth < 640;
+    const isMobile = () => window.innerWidth < 768;
 
     const setActiveNavLink = () => {
         const currentPath = window.location.pathname;
@@ -227,10 +230,10 @@ import logo from "../assets/logo.svg";
     const initScrollHeader = () => {
         let lastScrollTop = 0;
 
+        // Werkt nu op ELK scherm (zowel mobiel als desktop)
         window.addEventListener(
             "scroll",
             () => {
-                if (!isMobile()) return;
                 const isOpen =
                     $navButton.getAttribute("aria-expanded") === "true";
                 if (isOpen) return;
@@ -251,7 +254,6 @@ import logo from "../assets/logo.svg";
         window.addEventListener(
             "touchstart",
             () => {
-                if (!isMobile()) return;
                 $nav.classList.remove("nav-hidden");
             },
             { passive: true },
