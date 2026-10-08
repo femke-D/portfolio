@@ -75,7 +75,8 @@ h2,
 .insight__button,
 .header-cta,
 .quote-btn,
-.btn-more {
+.btn-more,
+.see-button {
     color: var(--color-dblauw);
     font-size: 16px;
 }
@@ -131,7 +132,8 @@ p {
     .insight__button,
     .header-cta,
     .quote-btn,
-    .btn-more {
+    .btn-more,
+    .see-button {
         color: var(--color-dblauw);
         font-size: 16px;
     }
@@ -168,16 +170,18 @@ p {
     .insight__button,
     .header-cta,
     .quote-btn,
-    .btn-more {
+    .btn-more,
+    .see-button {
         color: var(--color-dblauw);
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .about-button::after,
     .insight__button::after,
     .header-cta::after,
     .quote-btn::after,
-    .btn-more::after {
+    .btn-more::after,
+    .see-button::after {
         content: '→';
         display: inline-block;
         opacity: 0;
@@ -191,7 +195,8 @@ p {
     .insight__button:hover,
     .header-cta:hover,
     .quote-btn:hover,
-    .btn-more:hover {
+    .btn-more:hover,
+    .see-button:hover {
         text-decoration: underline;
     }
 
@@ -199,7 +204,8 @@ p {
     .insight__button:hover::after,
     .header-cta:hover::after,
     .quote-btn:hover::after,
-    .btn-more:hover::after {
+    .btn-more:hover::after,
+    .see-button:hover::after {
         opacity: 1;
         transform: translateX(0);
     }
