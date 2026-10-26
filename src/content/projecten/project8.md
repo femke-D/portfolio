@@ -24,7 +24,7 @@ View and Influence Cities is an interactive experience in which users explore an
 </p>
 
 <div class= "see-buttons">
-<a class= "see-button" href="https://city-ilj6.onrender.com/" class="project__figma">Visit website</a>
+<!-- <a class= "see-button" href="https://city-ilj6.onrender.com/" class="project__figma">Visit website</a> -->
 </div>
 </div>
 

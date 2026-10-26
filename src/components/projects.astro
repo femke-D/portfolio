@@ -1,8 +1,11 @@
 ---
 import { getCollection } from "astro:content";
 import ProjectsCard from "./projectsCard.astro";
+const hiddenProjects = ["The respiro", "Hiding self"];
 
-const allProjects = await getCollection("projecten");
+const allProjects = (await getCollection("projecten")).filter(
+    (project) => !hiddenProjects.includes(project.data.title),
+);
 
 const gesorteerdeProjecten = allProjects.sort((a, b) => {
     return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
